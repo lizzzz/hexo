@@ -1,0 +1,21 @@
+menu:
+#  Home: /  
+  关于: /about
+  阅读: /reading
+  归档: /archives
+  订阅: /atom.xml
+
+excerpt_link: Read More #摘要链接文字
+
+archive_yearly: false #按年存档
+archive_date_format: YYYY - MM - DD
+
+fancybox: true
+
+duoshuo_shortname:
+
+google_analytics:
+favicon: /source/favicon.ico
+
+widgets: #配置页脚显示哪些小挂件
+#- tag
