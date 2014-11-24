@@ -1,0 +1,23 @@
+menu:
+  Reading: /reading
+  Film: /film
+  About: /about
+  Archives: /archives
+
+widgets:  
+
+excerpt_link: More
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: false
+
+fancybox: flase
+
+google_analytics: 
+rss:
+
