@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
+title: 懒人
+subtitle: 这个家伙很懒，什么都懒得说。
+description: liz's blog
+author: Liz
 email:
 language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://lizzzz.github.io
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -48,9 +48,9 @@ tag_map:
 ## 2: Enable pagination
 ## 1: Disable pagination
 ## 0: Fully Disable
-archive: 2
-category: 2
-tag: 2
+archive: 1
+category: 1
+tag: 1
 
 # Server
 ## Hexo uses Connect as a server
@@ -58,15 +58,15 @@ tag: 2
 ## http://www.senchalabs.org/connect/logger.html
 port: 4000
 server_ip: localhost
-logger: false
-logger_format: dev
+logger: true
+logger_format: 
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MMM D YYYY
-time_format: H:mm:ss
+date_format: MMMM Do YYYY, hh:mm A
+time_format: hh:mm A
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -79,10 +79,12 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: liz
 exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:
+deploy: 
+  type: github
+  repository: git@github.com:lizzzz/lizzzz.github.io.git
+  branch: master
