@@ -8,7 +8,7 @@ subtitle: 这个家伙很懒，什么都懒得说。
 description: liz's blog
 author: Liz
 email:
-language: zh-CN
+language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -65,8 +65,8 @@ logger_format:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY - MM - DD
-time_format: hh:mm:ss
+date_format: MMMM Do YYYY, hh:mm A
+time_format: hh:mm A
 
 # Pagination
 ## Set per_page to 0 to disable pagination
