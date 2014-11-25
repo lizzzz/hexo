@@ -1,8 +1,8 @@
 menu:
-  Reading: /reading
-  Film: /film
-  About: /about
-  Archives: /archives
+  关于: /about
+  阅读: /reading
+  电影: /film  
+  归档: /archives
 
 widgets:  
 
@@ -16,8 +16,9 @@ twitter:
 addthis:
   enable: false
 
-fancybox: flase
+fancybox: true
 
 google_analytics: 
 rss:
 
+favicon: /source/favicon.ico
