@@ -51,6 +51,7 @@ cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
 ```
 $ git reflog
 ```
+<!-- more -->
 
 ---
 ###版本回退
