@@ -1,10 +1,26 @@
-menu:
-  关于: /about
-  阅读: /reading
-  电影: /film  
-  归档: /archives
+menu: 
+  - title: 关于
+    url: about
+    #intro: "关于懒人"
+    icon: "icon-user"
+  - title: 归档
+    url: archives
+    #intro: "全部归档"
+    icon: "icon-key"
+  - title: 阅读
+    url: reading
+    #intro: "阅读"
+    icon: "icon-book"
+  - title: 电影
+    url: film
+    #intro: "电影"
+    icon: "icon-film"
 
-widgets:  
+widgets:
+- category
+- tagcloud
+- recent_posts  
+- links
 
 excerpt_link: More
 
@@ -21,4 +37,4 @@ fancybox: true
 google_analytics: 
 rss:
 
-favicon: /source/favicon.ico
+favicon: favicon.ico
