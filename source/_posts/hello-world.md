@@ -26,6 +26,8 @@ More info: [Server](http://hexo.io/docs/server.html)
 $ hexo generate
 ```
 
+<!-- more -->
+
 More info: [Generating](http://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
