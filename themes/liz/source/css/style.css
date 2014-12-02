@@ -16,8 +16,6 @@ body {
   padding-top: 40px;
   background-color: #fff;
   background-repeat: repeat-x;
-  background-position: 0 40px;
-  padding-bottom: 70px;
 }
 
 
@@ -25,30 +23,60 @@ body {
    Article
    ========================================================================== */
 article {
-  padding-bottom: 40px;
   font-size: 0.9em;
   color: #777;
+
 }
 /* 标题前的竖线*/
 article .header {
-  border-left: 1.5px solid #ccc;
-  padding: 0 0 0 3px;
+  border-left: 0.2em solid #545652;
   text-align: left;
 }
 
-article h1, h2 {
+article p.title {
   font-weight: normal;
-  padding-bottom: 10px;
-  font-size: 1em;
+  font-size: 2em;
+  padding-left: 10px;
 
 }
 
-article h3, h4, h5, h6 {
-  font-weight: normal;
-  font-size: 1em;
+article p.title a {
+  color : #000;
+  text-decoration: none;
+}
+
+article p.title a:hover,
+a:focus {
+  color: #2F96E8;
+  text-decoration: none;
+}
+
+article p.title span.time {
+
+  font-size: 0.5em;
+  padding-top: 5px;
+  color: #000;
+  display: block;
+}
+
+h1 {
+   font-size: 1.7em;
+   color: #000;
+}
+h2 {
+  font-size: 1.5em;
   color: #000;
 }
 
+h3{
+  font-size: 1.2em;
+  color: #000;
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+  color: #000;
+}
 
 /* =============================================================================
    navbar
@@ -118,6 +146,9 @@ article h3, h4, h5, h6 {
   padding-top: 20px;
 }
 
+
+
+
 /* =============================================================================
    hyper links
    ========================================================================== */
@@ -140,6 +171,7 @@ a:focus {
   color: #fff;
   background-color: #2F96E8;
   border-color: #2F96E8;
+  margin-top: 20px;
 }
 
 .btn-primary:hover,
@@ -158,9 +190,7 @@ a:focus {
    other
    ========================================================================== */
 hr {
-  border: 0;
   border-bottom: 1.5px solid #ccc;
-  margin: 10px 0 20px 0;
 }
 
 
@@ -173,42 +203,6 @@ footer {
    page, post
    ========================================================================== */
 
-.post{
-  font-size: 1.2em;
-}
-
-.page{
-  font-size: 16px;
-}
-
-.page, .post{
-  line-height: 1.5em;
-}
-
-
-.page h3.title {
-  position:relative;
-  padding: 3px;
-  font-size: 1.3em;
-  font-weight: normal;
-  background-color: #F9F9F9;
-}
-
-.page h3.title a {
-  color: #2255B2;
-}
-
-.page h3.title span.date { 
-  float: right;
-  padding: 3px;
-  font-size: 0.7em;
-  color: #777;
-}
-
-.post .date {
-  margin-bottom:20px;
-  font-weight:bold;
-}
 
 
 /* =============================================================================

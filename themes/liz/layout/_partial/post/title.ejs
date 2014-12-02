@@ -1,19 +1,15 @@
 <% if (item.link) { %>
   <% if (item.title){ %>
-    <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
+    <p class="title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></p>
   <% } else { %>
-    <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
+    <p class="title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></p>
   <% } %>
 <% } else { %>
   <% if (index) { %>
   <!-- display as entry -->
-    <h3 class="title">
+    <p class="title">
       <a href="<%- config.root %><%- item.path %>" <% if(item.description) { %>title="<%= item.description %>"<% } %>><%= item.title %></a>
-      <span class="date"><i class="icon-time"></i> <%= item.date.format(config.date_format) %> </span>
-    </h3>
-  <% } else { %>
-    <div class="page-header">   
-      <h1><% if (item.icon) { %> <i class="<%= item.icon %>"></i> <% } %> <% if (item.page_title) { %><%= item.page_title %><% }else{ %><%= item.title %><% } %></h1>
-    </div>    
-  <% } %>
+      <span class="time"><i class="icon-time"></i> Posted on <%= item.date.format(config.date_format) %> </span>
+    </p>
+  <% }%>
 <% } %>
