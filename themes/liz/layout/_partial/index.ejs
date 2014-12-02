@@ -11,15 +11,16 @@
 		
 		<hr>
 
-		<div class="mypage">
-		
-		<!-- title and entry -->
-		<% page.posts.each(function(item){ %>
-			<%- partial('post/title', {item: item, index: index}) %>
-			<%- partial('post/entry', {item: item, index: index}) %>
-		<% }); %>
+		<article>		
+			<!-- title and entry -->
+			<% page.posts.each(function(item){ %>
+				<div class = "header">
+					<%- partial('post/title', {item: item, index: index}) %>
+				</div>
+				<%- partial('post/entry', {item: item, index: index}) %>
+			<% }); %>
 
-		</div>
+		</article>
 
 		<!-- pagination -->
 		<div>

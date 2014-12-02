@@ -36,7 +36,7 @@ post_asset_folder: false
 relative_link: false
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   tab_replace:
 
 # Category & Tag
@@ -65,8 +65,8 @@ logger_format:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MMMM Do YYYY, hh:mm A
-time_format: hh:mm A
+date_format: MMM DD YYYY
+time_format: hh:mm a
 
 # Pagination
 ## Set per_page to 0 to disable pagination

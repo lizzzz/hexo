@@ -1,22 +1,25 @@
-<div class="entry">
-  <div class="row">
-  <% if (item.feature ) { %>
-	<div class="col-md-8">
+<div class="row">
+		<% if (item.feature ) { %>
+		<div class="col-md-8">
 	<% } else { %>
-	<div class="col-md-12">
-	  <% } %>
+		<div class="col-md-12">
+  	<% } %>
 	<% if (item.excerpt && index) { %>
-	  <%- item.excerpt %>
+  	<%- item.excerpt %>
 	<% } else { %>
-	  <%- item.content %>
+	<pre><code class="html">
+  		<%- item.content %>
+  	</code></pre>
 	<% } %>
 	</div>
 	<% if (item.feature ) { %>
-	<div class="col-md-4">
-	  <div class="thumbnail"><a href="<%- config.root %><%= item.path %>"><img src="<%= config.root %><%= item.feature %>" alt="<%= item.title %>"  class="nofancybox"></a></div>
-	</div>
+		<div class="col-md-4">
+  			<div class="thumbnail"><a href="<%- config.root %><%= item.path %>"><img src="<%= config.root %><%= item.feature %>" alt="<%= item.title %>"  class="nofancybox"></a>
+  			</div>
+		</div>
 	<% } %>
-  
 </div>
-	<a type="button" href="<%- config.root %><%- item.path %>#more" class="btn btn-default more"><%= __('read_more') %></a>
-</div>
+
+<a class="btn btn-primary" href="#">More <i class="icon-double-angle-right"></i></a>
+
+<hr>
