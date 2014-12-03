@@ -17,10 +17,7 @@ menu:
     icon: "icon-film"
 
 widgets:
-- category
-- tagcloud
-- recent_posts  
-- links
+- about_me
 
 excerpt_link: More
 
@@ -38,3 +35,12 @@ google_analytics:
 rss:
 
 favicon: favicon.ico
+
+about_me:
+  title: ABOUT ME
+  img: about_me.jpg
+  texts:
+  - <a href="/about" target="_BLANK">懒人(Liz)</a>
+  - Smile, breathe & go slowly. ^_^
+  - <br>
+ # - <img src="/uploads/email.gif">
