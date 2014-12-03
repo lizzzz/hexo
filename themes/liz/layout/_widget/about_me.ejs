@@ -1,20 +1,27 @@
 <% if (theme.about_me){ %>
 <div class="about_me">
-  <ul class="entry">
-    <% if (theme.about_me.img){ %>
-    <li><img width="100" title="img" src="<%- config.root %><%= theme.about_me.img %>" /></li>
-    <% } %>
+  <div class="entry">
+  	<div class="top">
+   		<% if (theme.about_me.img){ %>
+    	<div class="top-img">
+    		<img width="100" title="img" src="<%- config.root %><%= theme.about_me.img %>" />
+    	</div>
+    	<% } %>
+    </div>
     <% theme.about_me.texts.forEach(function(item){ %>
-    <li><%- item %></li>
+    <p><%- item %></p>
     <% }); %>
-    <ul class="social-icons">
-        <li><a href="https://github.com/lizzzz/" class="social_github"></a></li>
-        <li><a href="http://www.douban.com/people/wangchenqd/" class="social_douban"></a></li>
-        <li><a href="http://weibo.com/wangchenqd" class="social_weibo"></a></li>
-        <li><a href="https://twitter.com/" class="social_twitter"></a></li>
-        <li><a href="https://www.facebook.com" class="social_facebook"></a></li>
-        <li><a href="https://www.linkedin.com" class="social_linkedin"></a></li>
-    </ul>
-  </ul>
+    <hr>
+    <P>心怀感恩，不忘初心。</P>
+    <P>是不是很文艺？不过我说的是真的。</P>
+    <p>这个家伙很懒，实在不想多说了。</p>
+    <div class="social-icons">
+    	<p>
+         	<a href="https://github.com/lizzzz/" class="social_github"></a>
+        	<a href="http://www.douban.com/people/wangchenqd/" class="social_qq"></a>
+        	<a href="http://weibo.com/wangchenqd" class="social_weibo"></a>
+        </p>
+    </div>
+  </div>
 </div>
 <% } %>

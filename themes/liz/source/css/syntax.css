@@ -40,11 +40,10 @@
 }
 figure.highlight {
   background: #F5F5F5;
-  border: 1px solid #eee;
   padding: 3px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 2px;
+  border-left: 3px solid #DADADA;
   line-height:1.6;
   overflow: auto;
   position: relative;

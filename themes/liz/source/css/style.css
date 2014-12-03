@@ -1,3 +1,8 @@
+@font-face{
+font-family: 'Mono';
+src: url('../fonts/Mono.ttf');
+}
+
 /* =============================================================================
    container
    ========================================================================== */
@@ -44,6 +49,7 @@ article p.title {
 }
 
 article p.title a {
+  font-family: 'Mono';
   color : #000;
   text-decoration: none;
 }
@@ -193,8 +199,9 @@ a:focus {
    other
    ========================================================================== */
 hr {
-  border-bottom: 1.5px solid #ccc;
-  margin: 10px 0;
+  border-bottom: 1px;
+  border-color: #CCC;
+  margin: 8px 0 15px 0;
 }
 
 
@@ -212,70 +219,76 @@ footer {
    sidebar
    ========================================================================== */
 #sidebar {
-  padding: 50px 10px;
+  margin: 50px 0;
+  padding: 0 20px 0 0;
   line-height: 1.8em
 }
 
-#sidebar .about_me {
+#sidebar ul, ol, dl {
+  list-style: none; 
+}
+
+.about_me {
   background-color: #F5F5F5;
 }
 
-#sidebar .about_me .entry {
+.about_me .entry {
   font-size: 0.8em;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
+  display: block;
 }
 
-#sidebar ul, ol, dl {
-  list-style: none;
-  
+.about_me .top {
+  background-color: #000;
 }
+
+
+.about_me .top-img {
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+
+.about_me p {
+  line-height: 1.5em;
+  color: #777;
+}
+
+
+
 
 
 /* =============================================================================
    social-icons
    ========================================================================== */
 
-.social-icons {
-   margin:0 0 25px 0 !important;
-   padding: 0; 
-}
-.social-icons li {
-   float: left;
-   display: inline;
-   list-style: none;
-   margin-right: 5px;
-   margin-bottom: 5px;
-   text-indent: -9999px;
-}
-.social-icons li a, a.social-icon {
-   width: 28px;
-   height: 28px;
-   display: block;
-   background-position: 0 0;
-   background-repeat: no-repeat;
-   transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -webkit-transition: all 0.3s ease-in-out;
-}
-.social-icons li:hover a {
-   background-position: 0 -38px;
+.social-icons a {
+  margin-top: 3px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  display: inline-block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+ 
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
 }
 
-.social-icons-color li a {
-  opacity: 0.7;
-  background-position:0 -38px !important;
+.social-icons a:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: none;
+  transition: none;
 }
 
-.social-icons-color li a:hover {
-  opacity: 1;
-}
 
-.social_github {background: url(/img/icons/github.png) no-repeat;}
-.social_douban {background: url(/img/icons/douban.png) no-repeat;}
-.social_weibo {background: url(/img/icons/weibo.png) no-repeat;}
-.social_twitter {background: url(/img/icons/twitter.png) no-repeat;}
-.social_facebook {background: url(/img/icons/facebook.png) no-repeat;}
-.social_linkedin {background: url(/img/icons/linkedin.png) no-repeat;}
+
+.social_github {background: url(/img/icons/github-ico.png) no-repeat;}
+.social_qq {background: url(/img/icons/qq-ico.png) no-repeat;}
+.social_weibo {background: url(/img/icons/weibo-ico.png) no-repeat;}
+
 
