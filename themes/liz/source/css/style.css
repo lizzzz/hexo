@@ -5,6 +5,11 @@
   width: 980px;
 } 
 
+.container-narrow {
+  margin: 0 auto;
+  max-width:980px;
+}
+
 /* =============================================================================
    Body and structure
    ========================================================================== */
@@ -200,31 +205,77 @@ hr {
    footer
    ========================================================================== */
 footer {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding: 10px 0 15px 15px;
 }
 
 /* =============================================================================
    sidebar
    ========================================================================== */
 #sidebar {
-  padding: 30px 10px;
+  padding: 50px 10px;
   line-height: 1.8em
 }
 
 #sidebar .about_me {
   background-color: #F5F5F5;
-
 }
 
 #sidebar .about_me .entry {
-      font-size: 0.9em;
-      padding: 15px 20px;
-    }
+  font-size: 0.8em;
+  padding: 10px;
+}
 
-   #sidebar ul.about_me , ol.about_me , dl.about_me {
-      list-style:none;
-        margin-left: 20px;
-      }
+#sidebar ul, ol, dl {
+  list-style: none;
+  
+}
 
+
+/* =============================================================================
+   social-icons
+   ========================================================================== */
+
+.social-icons {
+   margin:0 0 25px 0 !important;
+   padding: 0; 
+}
+.social-icons li {
+   float: left;
+   display: inline;
+   list-style: none;
+   margin-right: 5px;
+   margin-bottom: 5px;
+   text-indent: -9999px;
+}
+.social-icons li a, a.social-icon {
+   width: 28px;
+   height: 28px;
+   display: block;
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+}
+.social-icons li:hover a {
+   background-position: 0 -38px;
+}
+
+.social-icons-color li a {
+  opacity: 0.7;
+  background-position:0 -38px !important;
+}
+
+.social-icons-color li a:hover {
+  opacity: 1;
+}
+
+.social_github {background: url(/img/icons/github.png) no-repeat;}
+.social_douban {background: url(/img/icons/douban.png) no-repeat;}
+.social_weibo {background: url(/img/icons/weibo.png) no-repeat;}
+.social_twitter {background: url(/img/icons/twitter.png) no-repeat;}
+.social_facebook {background: url(/img/icons/facebook.png) no-repeat;}
+.social_linkedin {background: url(/img/icons/linkedin.png) no-repeat;}
 

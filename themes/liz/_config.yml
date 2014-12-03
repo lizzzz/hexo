@@ -37,10 +37,10 @@ rss:
 favicon: favicon.ico
 
 about_me:
-  title: ABOUT ME
   img: about_me.jpg
   texts:
+  - <hr>
   - <a href="/about" target="_BLANK">懒人(Liz)</a>
-  - Smile, breathe & go slowly. ^_^
+  - 这个家伙很懒，没有签名档。
   - <br>
  # - <img src="/uploads/email.gif">
