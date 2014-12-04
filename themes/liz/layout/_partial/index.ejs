@@ -32,6 +32,11 @@
 				</div>
 
 				<div class="col-md-1">
+					<div class="article-category">
+						<i class="icon-suitcase"></i>
+						<%- partial('post/category', {item: item, index: index}) %>
+					</div>
+					
 					<div class="article-tag">
 						<i class="icon-tags"></i>
 						<%- partial('post/tag', {item: item, index: index}) %>

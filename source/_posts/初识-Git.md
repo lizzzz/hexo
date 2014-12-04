@@ -1,5 +1,6 @@
 title: 初识Git
 date: 2014-12-01 10:57:35
+categories: [note]
 tags: [git, github]
 ---
 学习Git的笔记，未完待续。
@@ -42,7 +43,7 @@ $ git status
 $ git diff
 ```
 
-<!-- more -->
+<!--more-->
 
 
 ##日志

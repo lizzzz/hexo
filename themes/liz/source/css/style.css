@@ -23,9 +23,20 @@ body {
 }
 
 
+.col-md-1 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-md-10 {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
 /* =============================================================================
    Article
    ========================================================================== */
+
 article {
   font-size: 0.9em;
   color: #777;
@@ -55,15 +66,17 @@ a:focus {
 }
 
 article .title span a {
-  color: #337AB7;
+  color: #1382DA;
   text-decoration: none;
   float: right;
+  padding: 0 2px;
 }
 
 article .title span a:hover,
 a:focus {
-  color: #235290;
-  text-decoration: underline;
+  color: #fff;
+  background-color: #1382DA;
+  text-decoration: none;
 }
 
 article .title span.time {
@@ -77,36 +90,38 @@ article .title span.time {
 
 h1, h2, h3,h4, h5, h6 {
   font-size: 0.9em;
-  color: #666;
+  color: #777;
   font-weight: 600;
 }
 
-.side-icon {
-  padding: 10px 15px;
+.side-icon{
+  padding-top: 8px;
+  padding-left: 17px;
   color: #545652;
 }
 
+.side-icon a:hover,
+a:focus {
+  color: #1382DA;
+  text-decoration: none;
+}
+
 .side-icon .angle {
-  
-  padding-left: 1px;
-  display: inline;
+  padding-top: 5px;
 }
 
-.col-md-1 {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.col-md-10 {
-  padding-left: 20px;
-  padding-right: 40px;
+blockquote {
+  font-size: 0.9em;
+  background-color: #F5F5F5;
+  border-color: #ddd;
+  padding-left: 10px;
 }
 /* =============================================================================
    navbar
    ========================================================================== */
 /* nav背景*/
 .navbar-default {
-  background: #545652;
+  background: #333;
   border-color: #545652;
 }
 
@@ -193,10 +208,12 @@ a:focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #2F96E8;
-  border-color: #2F96E8;
+  background-color: #1382DA;
+  border-color: #1382DA;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 1px 3px;
+  font-size: 0.9em;
 }
 
 .btn-primary:hover,
@@ -206,9 +223,9 @@ a:focus {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #2F96E8;
-  border-color: #2F96E8;
-  text-decoration: underline;
+  background-color: #777;
+  border-color: #777;
+  text-decoration: none;
 }
 
 /* =============================================================================
@@ -232,8 +249,23 @@ footer {
     text-indent: 15px;
 }
 
+footer a {
+  color: #1382DA;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+footer a:hover,
+a:focus {
+  color: #fff;
+  background-color: #1382DA;
+  text-decoration: none;
+}
+
+
+
 /* =============================================================================
-   sidebar
+   sidebar and widget
    ========================================================================== */
 #sidebar {
   margin: 50px 10px;
@@ -271,15 +303,104 @@ footer {
   color: #777;
 }
 
+.about_me a {
+  line-height: 1.5em;
+  color: #1382DA;
+  padding: 0 1px;
+}
+
+.about_me a:hover,
+a:focus {
+  color: #fff;
+  background-color: #1382DA;
+  text-decoration: none;
+}
 
 
+/* =============================================================================
+   widget and tag box
+   ========================================================================== */
+
+.meta-widget {
+  margin: 10px 0;
+}
+
+.meta-widget a{
+  color:#555;
+}
+
+.tag_box {
+  margin:0;
+  overflow:hidden;
+}
+.tag_box li {
+  line-height:28px;
+}
+.tag_box li i {
+  opacity:0.9;
+}
+.tag_box.inline li {
+  float:left;
+}
+.tag_box a {
+  padding: 0 5px;
+  margin: 5px 5px 5px 0;
+  background: #e5e5e5;
+  color:#555;
+  border-radius: 3px;
+  text-decoration: none;
+  border:1px dashed #bbb;
+}
+.tag_box a span{
+  vertical-align:super;
+  font-size:0.8em;
+}
+.tag_box a:hover {
+  background-color:#397bdd;
+  color:#FFF;
+}
+.tag_box a.active {
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
+}
+
+.widget {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.widget .widget-icon p{
+  display: inline;
+  font-size: 1em;
+}
+
+.tagcloud .entry{
+  width: 100%;  
+}
+
+.archive-title:before {
+  font-family: FontAwesome;
+  content: '\f187  ';
+}
+
+.archive-title-tag:before {
+  font-family: FontAwesome;
+  content: '\f02c  ';
+}
+
+.archive-title-category:before {
+  font-family: FontAwesome;
+  content: '\f07b  ';
+}
 
 
 /* =============================================================================
    social-icons
    ========================================================================== */
 
-.social-icons a {
+.social-icons p a {
   margin-top: 3px;
   margin-right: 8px;
   margin-bottom: 3px;
@@ -294,15 +415,14 @@ footer {
   filter: gray;
 }
 
-.social-icons a:hover {
+.social-icons p a:hover {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   filter: grayscale(0);
   filter: none;
   transition: none;
+  background-color: transparent;
 }
-
-
 
 .social_github {background: url(/img/icons/github-ico.png) no-repeat;}
 .social_qq {background: url(/img/icons/qq-ico.png) no-repeat;}
@@ -310,14 +430,15 @@ footer {
 
 
 /* =============================================================================
-   tags
+   tags and categories
    ========================================================================== */
- .article-tag {
+ .article-tag, .article-category {
   float: left;
   font-size: 1em;
+  margin: 24px 0 1px 0;
 }
 
-.article-tag a{
+.article-tag a, .article-category a{
   color: #777;
 }
 
@@ -329,5 +450,24 @@ a:focus {
   text-decoration: none;
 }
 
+.article-category a:hover,
+a:focus {
+  color: #fff;
+  background-color: #777;
+  padding: 0 2px;
+  text-decoration: none;
+}
 
+/* =============================================================================
+   code
+   ========================================================================== */
+
+code {
+  background-color: #ddd;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+  color: #666;
+  font-size: 0.85em;
+  border-radius: 0;
+}
 

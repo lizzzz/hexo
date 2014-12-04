@@ -33,17 +33,17 @@
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: color-link;
+  color: #1382DA;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color:color-link;
+  color: #1382DA;
 }
 figure.highlight {
   background: #F5F5F5;
   padding: 3px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-left: 3px solid #DADADA;
+  border-left: 3px solid #ddd;
   line-height:1.6;
   overflow: auto;
   position: relative;
@@ -85,25 +85,25 @@ pre {
   font-size:13px;
 }
 pre .label,pre .comment,pre .template_comment,pre .diff .header,pre .doctype,pre .pi,pre .lisp .string,pre .javadoc{ 
-  color: #008080;
+  color: #777;
 }
 pre .keyword,pre .winutils,pre .method,pre .addition,pre .css .tag,pre .request,pre .status,pre .nginx .title {
-  color: #428bca;
+  color: #777;
 }
 pre .number,pre .command,pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula,pre .regexp,pre .hexcolor {
-  color: #d14;
+  color: #777;
 }
 pre .title,pre .localvars,pre .chunk,pre .decorator,pre .built_in,pre .identifier,pre .vhdl,pre .literal,pre .id {
-  color: #1e347b;
+  color: #777;
 }
 pre .attribute,pre .variable,pre .lisp .body,pre .smalltalk .number,pre .constant,pre .class .title,pre .parent,pre .haskell .type {
-  color: #008080;
+  color: #777;
 }
 pre .preprocessor,pre .preprocessor .keyword,pre .shebang,pre .symbol,pre .symbol .string,pre .diff .change,pre .special,pre .attr_selector,pre .important,pre .subst,pre .cdata,pre .clojure .title {
-  color: #cb4b16;
+  color: #777;
 }
 pre .deletion {
-  color: #dc322f;
+  color: #777;
 }
 code {
   font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;

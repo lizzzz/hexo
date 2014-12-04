@@ -18,6 +18,9 @@ menu:
 
 widgets:
 - about_me
+- category
+- tagcloud
+- weibo
 
 excerpt_link: More
 
@@ -39,7 +42,7 @@ favicon: favicon.ico
 about_me:
   img: about_me.jpg
   texts:
-  - <a href="/about" target="_BLANK">懒人(Liz)</a>
+  - <a href="/about" target="_BLANK">懒人(Liz) WangChen</a>
   - 位置：北京 天津 青岛
   - 角色：伪搬砖 前PM
   - 技能：没有技能

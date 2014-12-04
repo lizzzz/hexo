@@ -1,0 +1,10 @@
+<% if (item.categories && item.categories.length){ %>
+  <%
+  item.categories.forEach(function(category){ %>    
+  <div>
+  	   <a href="<%=config.root%><%=category.path%>"><%= category.name %></a>
+  </div>
+  <%  
+  });
+  %>
+<% } %>
