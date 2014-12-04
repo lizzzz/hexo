@@ -1,7 +1,6 @@
 title: 初识Git
 date: 2014-12-01 10:57:35
-categories: git
-tags: git github
+tags: [git, github]
 ---
 学习Git的笔记，未完待续。
 
@@ -43,6 +42,9 @@ $ git status
 $ git diff
 ```
 
+<!-- more -->
+
+
 ##日志
 ---
 显示从最近到最远的提交日志
@@ -67,7 +69,6 @@ cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
 ```
 $ git reflog
 ```
-<!-- more -->
 
 ##版本回退
 ---

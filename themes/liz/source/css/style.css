@@ -54,10 +54,22 @@ a:focus {
   color: #1382DA;
 }
 
+article .title span a {
+  color: #337AB7;
+  text-decoration: none;
+  float: right;
+}
+
+article .title span a:hover,
+a:focus {
+  color: #235290;
+  text-decoration: underline;
+}
+
 article .title span.time {
   font-size: 0.4em;
-  padding-top: 0;
-  padding-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: #000;
   display: block;
 }
@@ -70,16 +82,24 @@ h1, h2, h3,h4, h5, h6 {
 }
 
 .side-icon {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 15px;
+  color: #545652;
 }
 
-.tag {
-  float: left;
+.side-icon .angle {
+  
+  padding-left: 1px;
+  display: inline;
 }
 
-.col-md-1, .col-md-10 {
+.col-md-1 {
   padding-right: 0;
   padding-left: 0;
+}
+
+.col-md-10 {
+  padding-left: 20px;
+  padding-right: 40px;
 }
 /* =============================================================================
    navbar
@@ -121,7 +141,7 @@ h1, h2, h3,h4, h5, h6 {
 
 .navbar-default .navbar-brand:hover, 
 .navbar-default .navbar-brand:focus {
-    color: #fff;
+    color: #eee;
     background-color: transparent;
 }
 
@@ -287,5 +307,27 @@ footer {
 .social_github {background: url(/img/icons/github-ico.png) no-repeat;}
 .social_qq {background: url(/img/icons/qq-ico.png) no-repeat;}
 .social_weibo {background: url(/img/icons/weibo-ico.png) no-repeat;}
+
+
+/* =============================================================================
+   tags
+   ========================================================================== */
+ .article-tag {
+  float: left;
+  font-size: 1em;
+}
+
+.article-tag a{
+  color: #777;
+}
+
+.article-tag a:hover,
+a:focus {
+  color: #fff;
+  background-color: #777;
+  padding: 0 2px;
+  text-decoration: none;
+}
+
 
 
