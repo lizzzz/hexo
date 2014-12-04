@@ -1,8 +1,3 @@
-@font-face{
-font-family: 'Mono';
-src: url('../fonts/Mono.ttf');
-}
-
 /* =============================================================================
    container
    ========================================================================== */
@@ -24,6 +19,7 @@ body {
   padding-top: 40px;
   background-color: #fff;
   background-repeat: repeat-x;
+  font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
 }
 
 
@@ -33,60 +29,58 @@ body {
 article {
   font-size: 0.9em;
   color: #777;
-
 }
-/* 标题前的竖线*/
+
+/*标题前的竖线
 article .header {
   border-left: 0.2em solid #545652;
   text-align: left;
-}
+}*/
 
-article p.title {
+
+article .title {
   font-weight: normal;
-  font-size: 2em;
-  padding-left: 10px;
-
+  font-size: 2.5em;
 }
 
-article p.title a {
-  font-family: 'Mono';
-  color : #000;
+article .title a {
+  color: #000;
   text-decoration: none;
 }
 
-article p.title a:hover,
+article .title a:hover,
 a:focus {
-  color: #2F96E8;
   text-decoration: none;
+  color: #1382DA;
 }
 
-article p.title span.time {
-
-  font-size: 0.5em;
-  padding-top: 5px;
+article .title span.time {
+  font-size: 0.4em;
+  padding-top: 0;
+  padding-bottom: 25px;
   color: #000;
   display: block;
 }
 
-h1 {
-   font-size: 1.7em;
-   color: #000;
-}
-h2 {
-  font-size: 1.5em;
-  color: #000;
+
+h1, h2, h3,h4, h5, h6 {
+  font-size: 0.9em;
+  color: #666;
+  font-weight: 600;
 }
 
-h3{
-  font-size: 1.2em;
-  color: #000;
+.side-icon {
+  padding: 10px 10px 10px 15px;
 }
 
-h4, h5, h6 {
-  font-size: 1em;
-  color: #000;
+.tag {
+  float: left;
 }
 
+.col-md-1, .col-md-10 {
+  padding-right: 0;
+  padding-left: 0;
+}
 /* =============================================================================
    navbar
    ========================================================================== */
@@ -105,6 +99,7 @@ h4, h5, h6 {
 
 .navbar {
   min-height: 40px;
+  padding: 0 10px;
 }
 
 .navbar-toggle {
@@ -180,7 +175,8 @@ a:focus {
   color: #fff;
   background-color: #2F96E8;
   border-color: #2F96E8;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .btn-primary:hover,
@@ -205,21 +201,22 @@ hr {
 }
 
 
-
-
-
 /* =============================================================================
    footer
    ========================================================================== */
 footer {
     padding: 10px 0 15px 15px;
+    text-align: left;
+    font-size: 0.9em;
+    color: #777;
+    text-indent: 15px;
 }
 
 /* =============================================================================
    sidebar
    ========================================================================== */
 #sidebar {
-  margin: 50px 0;
+  margin: 50px 10px;
   padding: 0 20px 0 0;
   line-height: 1.8em
 }

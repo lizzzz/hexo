@@ -1,8 +1,10 @@
-title: 初识 Git 知乎 真实的
+title: 初识Git
 date: 2014-12-01 10:57:35
 categories: git
 tags: git github
 ---
+学习Git的笔记，未完待续。
+
 ##创建版本库
 ---
 

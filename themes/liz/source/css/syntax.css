@@ -1,5 +1,5 @@
 .entry {
-  font-family: font-default;
+  font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
 }
 .entry .gist {
   background: #000;
@@ -81,7 +81,7 @@ figure.highlight .code {
 }
 pre {
   color:#666;
-  font-family:font-default;
+  font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
   font-size:13px;
 }
 pre .label,pre .comment,pre .template_comment,pre .diff .header,pre .doctype,pre .pi,pre .lisp .string,pre .javadoc{ 
@@ -106,5 +106,5 @@ pre .deletion {
   color: #dc322f;
 }
 code {
-  font-family: font-default;
+  font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
 }

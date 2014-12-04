@@ -1,32 +1,45 @@
 <div class="row">
-
-	<% if (theme.widgets.length) { %>
-	<div class="col-md-8">
-	<% } else { %>
 	<div class="col-md-12">
-	<% } %>
-		<div class="under-navbar">
-			<li><i class="icon-th-list"></i> 最新动态</li>
-		</div>
-		
-		<hr>
+		<div class="col-md-8">
+			<div class="under-navbar">
+				<li><i class="icon-th-list"></i> 最新动态</li>
+			</div>
+			
+			<hr>
 
-		<article>		
-			<!-- title and entry -->
 			<% page.posts.each(function(item){ %>
-				<div class = "header">
-					<%- partial('post/title', {item: item, index: index}) %>
+
+			<div class="row">
+
+				<div class="col-md-1">
+					<div class="side-icon">
+						<i class="icon-edit icon-2x"></i>
+						<i class="icon-double-angle-down icon-2x"></i>
+					</div>
+				</div>	
+
+				<div class="col-md-10">
+					<article>		
+						<!-- title and entry -->
+													
+						<%- partial('post/title', {item: item, index: index}) %>
+						<%- partial('post/entry', {item: item, index: index}) %>
+						
+					</article>
 				</div>
-				<%- partial('post/entry', {item: item, index: index}) %>
+
+				<div class="col-md-1">
+					<div class="tag">
+						<%- partial('post/tag', {item: item, index: index}) %>
+					</div>
+				</div>
+				
+			</div><!-- row -->
+			<hr>
 			<% }); %>
+		</div><!-- col-md-8 -->
 
-		</article>
-
-	</div> <!-- col-md-8 -->
-
-	<% if (theme.widgets.length) { %>
 		<%- partial('sidebar') %>
-		</div>
-	<% } %>
+	</div><!-- col-md-12 -->
 	
 </div> <!-- row-fluid -->
