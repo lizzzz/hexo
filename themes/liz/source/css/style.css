@@ -79,6 +79,7 @@ a:focus {
   text-decoration: none;
 }
 
+
 article .title span.time {
   font-size: 0.4em;
   margin-top: 0;
@@ -249,18 +250,19 @@ footer {
     text-indent: 15px;
 }
 
-footer a {
+footer a  {
   color: #1382DA;
   text-decoration: none;
   padding: 0 2px;
 }
 
-footer a:hover,
-a:focus {
+footer a:hover {
   color: #fff;
   background-color: #1382DA;
   text-decoration: none;
 }
+
+
 
 
 
@@ -322,7 +324,7 @@ a:focus {
    ========================================================================== */
 
 .meta-widget {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .meta-widget a{
@@ -355,19 +357,16 @@ a:focus {
   vertical-align:super;
   font-size:0.8em;
 }
-.tag_box a:hover {
+.tag_box a:hover,
+a:focus {
   background-color:#397bdd;
-  color:#FFF;
-}
-.tag_box a.active {
-  background:#57A957;
-  border:1px solid #4C964D;
   color:#FFF;
 }
 
 .widget {
   padding-bottom: 20px;
   padding-top: 10px;
+  padding-left: 10px;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -430,12 +429,13 @@ a:focus {
 
 
 /* =============================================================================
-   tags and categories
+   tags and categories after article
    ========================================================================== */
  .article-tag, .article-category {
   float: left;
   font-size: 1em;
-  margin: 24px 0 1px 0;
+  margin: 27px 0 1px 0;
+  font-size: 0.9em;
 }
 
 .article-tag a, .article-category a{
