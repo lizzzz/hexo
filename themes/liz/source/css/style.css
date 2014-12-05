@@ -3,6 +3,7 @@
    ========================================================================== */
 .container {  
   width: 980px;
+  padding: 0;
 } 
 
 .container-narrow {
@@ -31,6 +32,87 @@ body {
 .col-md-10 {
   padding-left: 20px;
   padding-right: 40px;
+}
+
+/* =============================================================================
+   navbar
+   ========================================================================== */
+.navbar {
+  min-height: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* nav背景*/
+.navbar-default {
+  background: #333;
+  border-color: #545652;
+
+}
+
+/* menu选项 
+.navbar-nav {
+  /*background: #0C7854;
+} */
+
+.navbar-toggle {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.navbar-toggle {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* logo and link */
+.navbar-header .navbar-brand {
+  height: 30px;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 1em;
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+    color: #eee;
+    background-color: transparent;
+}
+
+#bs-example-navbar-collapse-1.navbar-collapse.collapse {
+  height: 30px;
+}
+
+
+
+/* menu list and link*/
+.navbar-nav {
+  height: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 0.9em;
+  color: #ddd;
+  height: 30px; 
+  padding-top: 6px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #666;
+}
+
+/* =============================================================================
+   under navbar
+   ========================================================================== */
+.under-navbar {
+  font-size: 1em;
+  color: #777;  
+  display: block;
+  list-style: none;
+  padding-top: 20px;
 }
 
 /* =============================================================================
@@ -117,76 +199,6 @@ blockquote {
   border-color: #ddd;
   padding-left: 10px;
 }
-/* =============================================================================
-   navbar
-   ========================================================================== */
-/* nav背景*/
-.navbar-default {
-  background: #333;
-  border-color: #545652;
-}
-
-
-/* menu选项 
-.navbar-nav {
-  /*background: #0C7854;
-} */
-
-
-.navbar {
-  min-height: 40px;
-  padding: 0 10px;
-}
-
-.navbar-toggle {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.navbar-toggle {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-/* logo and link */
-.navbar-header .navbar-brand {
-  height: 40px;
-  padding-top: 10px;
-  color: #fff;
-}
-
-.navbar-default .navbar-brand:hover, 
-.navbar-default .navbar-brand:focus {
-    color: #eee;
-    background-color: transparent;
-}
-
-
-/* menu list and link*/
-.navbar-default .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #D5D5E7;
-}
-
-.navbar-default .navbar-nav > li > a:hover, 
-.navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
-  background-color: transparent;
-}
-
-/* =============================================================================
-   under navbar
-   ========================================================================== */
-.under-navbar {
-  font-size: 1em;
-  color: #777;  
-  display: block;
-  list-style: none;
-  padding-top: 20px;
-}
-
-
 
 
 /* =============================================================================
