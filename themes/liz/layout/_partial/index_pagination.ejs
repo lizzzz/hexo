@@ -1,0 +1,18 @@
+<ul class="pagination">
+ <% if (page.prev || page.next) { %>
+	<% if (page.prev){ %>
+  	<li><a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><i class="icon-circle-arrow-left"></i> <%= __('prev') %></a></li>
+		<% } else { %>
+        <li class="disabled"><a><i class="icon-circle-arrow-left"></i><%= __('prev') %></a></li>
+      <% } %>
+
+      <li><a href="<%- config.root %>"><i class="icon-home"> </i>Home</a></li>
+
+	<% if (page.next){ %>
+	   <li> <a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %> <i class="icon-circle-arrow-right"></i></a> </li>          
+      <% } else { %>
+        <li class="disabled"><a><%= __('next') %> <i class="icon-circle-arrow-right"></i></a></li>
+      <% } %>
+<% }  %>
+</ul>
+
