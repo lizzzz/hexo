@@ -2,7 +2,7 @@
 	<div class="widget">
 		<div class="widget-icon">
 			<i class="icon-tag"></i>
-			<p><%= __('tagcloud') %> · · · · · · · · · · · · · · (<a href="#">全部</a>)</p>
+			<p><%= __('tagcloud') %> · · · · · · · · · · · · · (<a href="#">全部</a>)</p>
 		</div>
 		<ul class="tag_box inline list-unstyled">		
 		<% site.tags.random().limit(20).each(function(item){ %>

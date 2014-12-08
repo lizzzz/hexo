@@ -18,6 +18,7 @@ menu:
 
 widgets:
 - about_me
+- recent_posts
 - category
 - tagcloud
 - weibo
