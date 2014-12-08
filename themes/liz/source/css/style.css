@@ -338,7 +338,7 @@ footer a:active {
 }
 
 .about_me a:link,
-.about me a:visited {
+.about_me a:visited {
   line-height: 1.5em;
   color: #1382DA;
   padding: 0 1px;
@@ -402,8 +402,10 @@ a:active {
 }
 
 .widget {
-  border-bottom: 1px solid #ddd;
-  padding: 20px 10px;
+  /*border-bottom: 1px solid #ddd;*/
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .widget .widget-icon {
@@ -433,7 +435,6 @@ a:active {
 
 .widget .list-unstyled {
   margin: 0;
-  padding-left: 18px;
   padding-bottom: 5px;
 }
 
@@ -441,7 +442,7 @@ ul, ol {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 28px;
-  padding-left: 18px;
+  padding-left: 0;
   padding-top: 10px;
 }
 
