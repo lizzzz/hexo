@@ -304,6 +304,11 @@ footer a:active {
    ========================================================================== */
 #sidebar {
   margin: 30px;
+ 
+  /*
+  position: fixed;
+  top: 10px;
+  overflow:scroll; */  
 }
 
 #sidebar ul, ol, dl {
@@ -511,11 +516,11 @@ ul, ol {
   background-color: transparent;
 }
 
-.social_github {background: url(/img/icons/pop_github.png) no-repeat;}
-.social_weibo {background: url(/img/icons/pop_weibo.png) no-repeat;}
-.social_douban {background: url(/img/icons/pop_douban.png) no-repeat;}
-.social_zhihu {background: url(/img/icons/pop_zhihu.png) no-repeat;}
-.social_mail {background: url(/img/icons/pop_mail.png) no-repeat;}
+.social_github {background: url(/img/icons/github.png) no-repeat;}
+.social_weibo {background: url(/img/icons/weibo.png) no-repeat;}
+.social_douban {background: url(/img/icons/douban.png) no-repeat;}
+.social_zhihu {background: url(/img/icons/zhihu.png) no-repeat;}
+.social_mail {background: url(/img/icons/mail.png) no-repeat;}
 
 
 /* =============================================================================
