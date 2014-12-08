@@ -97,7 +97,7 @@ pre .title,pre .localvars,pre .chunk,pre .decorator,pre .built_in,pre .identifie
   color: #777;
 }
 pre .attribute,pre .variable,pre .lisp .body,pre .smalltalk .number,pre .constant,pre .class .title,pre .parent,pre .haskell .type {
-  color: #777;
+  color: #B58900;
 }
 pre .preprocessor,pre .preprocessor .keyword,pre .shebang,pre .symbol,pre .symbol .string,pre .diff .change,pre .special,pre .attr_selector,pre .important,pre .subst,pre .cdata,pre .clojure .title {
   color: #777;
@@ -105,6 +105,14 @@ pre .preprocessor,pre .preprocessor .keyword,pre .shebang,pre .symbol,pre .symbo
 pre .deletion {
   color: #777;
 }
+
 code {
   font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+  background-color: #f5f5f5;
+  border:1px solid #ddd;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+  color: #666;
+  font-size: 0.8em;
+  border-radius: 1;
 }
