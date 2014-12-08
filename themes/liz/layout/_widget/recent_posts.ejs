@@ -1,0 +1,18 @@
+<br>
+<% if (site.posts.length){ %>
+  <div class="widget">
+    <div class="widget-icon">
+      <i class="icon-tasks"></i>
+      <p><%= __('recent_posts') %> · · · · · · · · · · · (<a href="#">全部</a>)</p>
+    </div>
+
+      <ul class="post-list">
+        <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+          <li>
+            <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+          </li>
+        <% }) %>
+      </ul>
+  </div>
+
+<% } %>
