@@ -9,7 +9,9 @@
   <!-- display as entry -->
     <div class="title">
       <a href="<%- config.root %><%- item.path %>" <% if(item.description) { %>title="<%= item.description %>"<% } %>><%= item.title %></a>
-      <span class="time"><i class="icon-time"></i></a> Posted on <%= item.date.format(config.date_format) %>  <a href="/about" target="_BLANK"><i class="icon-edit"></i> Edited by Liz</a></span>
+      <span class="icon"><i class="icon-time"></i> Posted on <%= item.date.format(config.date_format) %></span>
+      <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
+      <hr>
     </div>
   <% }%>
 <% } %>

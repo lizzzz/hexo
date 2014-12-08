@@ -1,6 +1,9 @@
 <% if (site.tags.length){ %>
 	<div class="widget">
-		<h4><%= __('tagcloud') %></h4>
+		<div class="widget-icon">
+			<i class="icon-tag"></i>
+			<p><%= __('tagcloud') %> · · · · · · · · · · · · · · (<a href="#">全部</a>)</p>
+		</div>
 		<ul class="tag_box inline list-unstyled">		
 		<% site.tags.random().limit(20).each(function(item){ %>
 			<li><a href="<%- config.root %><%- item.path %>"><%= item.name %><span><%= item.posts.length %></span></a></li>
