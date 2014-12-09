@@ -1,5 +1,16 @@
 <div class="entry">
+	<% if (item.excerpt && index){ %>
+		<%- item.excerpt %>
+	<% } else { %>
+		<%- item.content %>
+		<br>
+		<p>- EOF -</p>
+	<% } %>
 
-	<%- item.content %>
+
+	<% if (index){ %>
+		<% if (item.excerpt){ %>
+			<a href="<%- config.root %><%- item.path %>#more" class="btn btn-primary"><%= theme.excerpt_link %> <i class="icon-double-angle-right"></i></a>
+		<% } %>
+	<% } %>
 </div>
-<a class="btn btn-primary" href="#">Read More <i class="icon-double-angle-right"></i></a>

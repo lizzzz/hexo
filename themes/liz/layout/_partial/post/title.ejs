@@ -13,5 +13,12 @@
       <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
       <hr>
     </div>
-  <% }%>
+  <% } else { %>
+    <div class="title">
+      <p><%= item.title %></p>
+      <span class="icon"><i class="icon-time"></i> Posted on <%= item.date.format(config.date_format) %></span>
+      <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
+      <hr>
+    </div>
+  <% } %>
 <% } %>

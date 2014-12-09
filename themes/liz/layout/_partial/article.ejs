@@ -1,39 +1,68 @@
-<article class="<%= item.layout %>">
-  <% if (item.photos){ %>
-    <%- partial('post/gallery') %>
-  <% } %>
-  <div class="post-content">
-    <div class="header">
-      <%- partial('post/title') %>
-    </div>
+<div class="under-navbar">
+	<li><i class="icon-th-list"></i> 阅读文章</li>
+</div>
 
-    <div class="entry">
-      <% if (item.excerpt && index){ %>
-        <%- item.excerpt %>
-      <% } else { %>
-        <%- item.content %>
-      <% } %>
-    </div>
+<hr>
 
-	<% if (index){ %>
-		<% if (item.excerpt){ %>
-			<a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
-		<% } %>
-	<% } %>
+<div class="row">
 
-	<hr/>
+	<div class="col-md-1">
+		<div class="side-icon">
+			<a href="/">
+				<i class="icon-hand-left icon-2x"></i>
+				<div class="angle">
+					<i class="icon-double-angle-left"></i>
+					<i class="icon-double-angle-left"></i>
+				</div>
+			</a>
+		</div>
+	</div>	
 
-	<% if (is_post() == true) { %>
-		<nav id="pagination">
-			<% if (page.prev){ %>
-				<a href="<%- config.root %><%- page.prev.path %>" class="alignleft prev" title="<%- page.prev.title %>"><%- page.prev.title %></a>
+	<div class="col-md-10">
+		<article>		
+			<!-- title and entry -->										
+			<%- partial('post/title', {item: item}) %>
+			<%- partial('post/entry', {item: item}) %>
+
+			<hr/>
+
+			<% if (is_post() == true) { %>
+				<div class="under-article">
+					<% if (page.prev){ %>
+						<a href="<%- config.root %><%- page.prev.path %>" class="prev"><i class="icon-chevron-left"></i> <%- page.prev.title %></a>
+					<% } %>
+					<% if (page.next){ %>
+						<a href="<%- config.root %><%- page.next.path %>" class="next"><%- page.next.title %> <i class="icon-chevron-right"></i></a>
+					<% } %>
+				</div>
 			<% } %>
-			<% if (page.next){ %>
-				<a href="<%- config.root %><%- page.next.path %>" class="alignright next" title="<%- page.next.title %>"><%- page.next.title %></a>
-			<% } %>
-		</nav>
-	<% } %>
-  </div>
-</article>
 
-<%- partial('comment') %>
+			<% if (!index && theme.duoshuo && item.comments){ %>
+				<%- partial('post/comment', {
+				    key: item.slug,
+				    title: item.title,
+				    url: config.url+url_for(item.path)
+				  }) %>
+				<% } %>
+			
+		</article>
+	</div>
+
+	<div class="col-md-1">
+		<div class="article-category">
+			<div class="article-icon">
+				<i class="icon-suitcase"></i>
+			</div>
+			<%- partial('post/category', {item: item, index: index}) %>
+		</div>
+		
+		<div class="article-tag">
+			<div class="article-icon">
+				<i class="icon-tags"></i>
+			</div>
+			<%- partial('post/tag', {item: item, index: index}) %>
+		</div>
+	</div>
+	
+</div><!-- row -->
+<hr>

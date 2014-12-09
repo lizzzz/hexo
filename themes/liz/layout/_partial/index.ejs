@@ -1,70 +1,59 @@
+<div class="under-navbar">
+	<li><i class="icon-th-list"></i> 最新动态</li>
+</div>
+
+<hr>
+
+<% page.posts.each(function(item){ %>
+
 <div class="row">
-	<div class="col-md-12">
-		<div class="col-md-8">
-			<div class="under-navbar">
-				<li><i class="icon-th-list"></i> 最新动态</li>
-			</div>
-			
-			<hr>
 
-			<% page.posts.each(function(item){ %>
-
-			<div class="row">
-
-				<div class="col-md-1">
-					<div class="side-icon">
-						<a href="#">
-							<i class="icon-hand-right icon-2x"></i>
-							<div class="angle">
-								<i class="icon-double-angle-right"></i>
-								<i class="icon-double-angle-right"></i>
-							</div>
-						</a>
-					</div>
-				</div>	
-
-				<div class="col-md-10">
-					<article>		
-						<!-- title and entry -->
-													
-						<%- partial('post/title', {item: item, index: index}) %>
-						<%- partial('post/entry', {item: item, index: index}) %>
-						
-					</article>
+	<div class="col-md-1">
+		<div class="side-icon">
+			<a href="<%- config.root %><%- item.path %>">
+				<i class="icon-hand-right icon-2x"></i>
+				<div class="angle">
+					<i class="icon-double-angle-right"></i>
+					<i class="icon-double-angle-right"></i>
 				</div>
+			</a>
+		</div>
+	</div>	
 
-				<div class="col-md-1">
-					<div class="article-category">
-						<div class="article-icon">
-							<i class="icon-suitcase"></i>
-						</div>
-						<%- partial('post/category', {item: item, index: index}) %>
-					</div>
-					
-					<div class="article-tag">
-						<div class="article-icon">
-							<i class="icon-tags"></i>
-						</div>
-						<%- partial('post/tag', {item: item, index: index}) %>
-					</div>
-				</div>
-				
-			</div><!-- row -->
-			<hr>
-			<% }); %>
-
-
-		<!-- pagination -->
-			<div>
-	  			<center>
-					<%- partial('index_pagination') %>
-	  			</center>
-			</div>
+	<div class="col-md-10">
+		<article>		
+			<!-- title and entry -->										
+			<%- partial('post/title', {item: item, index: index}) %>
+			<%- partial('post/entry', {item: item, index: index}) %>
 			
-		</div><!-- col-md-8 -->
+		</article>
+	</div>
 
-		<%- partial('sidebar') %>
-
-	</div><!-- col-md-12 -->
+	<div class="col-md-1">
+		<div class="article-category">
+			<div class="article-icon">
+				<i class="icon-suitcase"></i>
+			</div>
+			<%- partial('post/category', {item: item, index: index}) %>
+		</div>
+		
+		<div class="article-tag">
+			<div class="article-icon">
+				<i class="icon-tags"></i>
+			</div>
+			<%- partial('post/tag', {item: item, index: index}) %>
+		</div>
+	</div>
 	
-</div> <!-- row-fluid -->
+</div><!-- row -->
+<hr>
+<% }); %>
+
+
+<!-- pagination -->
+<div>
+		<center>
+		<%- partial('index_pagination') %>
+		</center>
+</div>
+			
