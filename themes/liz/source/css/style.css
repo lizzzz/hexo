@@ -154,6 +154,7 @@ article .title a:visited {
   text-decoration: none;
   background-color: transparent;
   padding: 0 8px 0 0;
+  color: #1382DA;
 
 }
 
@@ -168,7 +169,7 @@ article .title span {
   font-size: 0.3em;
 }
 
-article .title span a:link
+article .title span a:link,
 article .title span a:visited {
   color: #1382DA;
   text-decoration: none;
@@ -201,13 +202,18 @@ h1, h2, h3,h4, h5, h6 {
 }
 
 .side-icon{
-  padding-top: 8px;
+  padding-top: 3px;
   padding-left: 3px;
+}
+
+.side-icon a:link,
+a:visited {
   color: #666;
+  text-decoration: none;
 }
 
 .side-icon a:hover,
-a:focus {
+a:active {
   color: #1382DA;
   text-decoration: none;
 }
