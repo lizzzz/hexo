@@ -37,6 +37,10 @@
 				</div>
 			<% } %>
 
+			<% if (!index && theme.share){ %>
+				<%- partial('post/share') %>
+			<% } %>
+
 			<% if (!index && theme.duoshuo && item.comments){ %>
 				<%- partial('post/comment', {
 				    key: item.slug,

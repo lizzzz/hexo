@@ -241,6 +241,7 @@ blockquote {
 
 article .under-article {
 	margin: 30px 0;
+  display: block;
 }
 
 article .next {
@@ -252,7 +253,7 @@ article .prev {
 }
 
 article .next, article .prev {
-	margin-bottom: 30px;
+	
 }
 
 article a:link,
@@ -626,4 +627,24 @@ ul, ol {
    ========================================================================== */
 .duoshuo{
 	padding: 0;
+}
+
+/* =============================================================================
+   share
+   ========================================================================== */
+
+.share {
+  display: block;
+  margin: 30px 0;
+  float: left;
+  clear: both;
+  padding: 0;
+}
+
+.jiathis_txt {
+  float: left;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 18px!important;
+  padding-left: 5px;
 }
