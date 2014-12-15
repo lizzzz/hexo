@@ -3,12 +3,12 @@ date: 2014-12-01 10:57:35
 categories: [note]
 tags: [git, github]
 ---
-学习Git的笔记，未完待续。
+学习`Git`的笔记，未完待续。
 
 ##创建版本库
 ---
 
-将目录变成 Git 可以管理的版本库
+将目录变成`Git`可以管理的版本库
 
 ```
 $ git init
@@ -37,7 +37,7 @@ $ git commit -m "wrote a readme file"
 $ git status
 ```
 
-查看 difference
+查看`difference`
 
 ```
 $ git diff
@@ -54,7 +54,7 @@ $ git diff
 $ git log
 ```
 
-输出一行 log 信息
+输出一行`log`信息
 
 ```
 $ git log --pretty=oneline
@@ -63,7 +63,7 @@ ea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributed
 cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
 ```
 
-一大串类似 `3628164...882e1e0` 的是 `commit id`，由SHA1计算。
+一大串类似 `3628164...882e1e0` 的是 `commit id`，由`SHA1`计算。
 
 每一次命令的记录
 
@@ -73,7 +73,7 @@ $ git reflog
 
 ##版本回退
 ---
-在 Git 中，用 `HEAD` 表示当前版本，上一个版本就是 `HEAD^`，上上一个版本就是 `HEAD^^`，当然往上100个版本写100个^比较容易数不过来，所以写成 `HEAD~100`。
+在`Git`中，用 `HEAD` 表示当前版本，上一个版本就是 `HEAD^`，上上一个版本就是 `HEAD^^`，当然往上100个版本写100个^比较容易数不过来，所以写成 `HEAD~100`。
 
 回退到某个版本
 

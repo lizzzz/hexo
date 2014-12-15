@@ -3,7 +3,7 @@
 	<% if (page.prev){ %>
   	<li><a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><i class="icon-circle-arrow-left"></i> <%= __('prev') %></a></li>
 		<% } else { %>
-        <li class="disabled"><a><i class="icon-circle-arrow-left"></i><%= __('prev') %></a></li>
+        <li class="disabled"><a><i class="icon-circle-arrow-left"></i>&nbsp<%= __('prev') %></a></li>
       <% } %>
 
       <li><a href="<%- config.root %>"><i class="icon-home"> </i>Home</a></li>

@@ -21,6 +21,7 @@ widgets:
 - recent_posts
 - category
 - tagcloud
+- link
 
 excerpt_link: Read More
 
@@ -50,3 +51,11 @@ about_me:
 
 duoshuo: iwangchen
 share: true
+
+links:
+  - title: Homepage
+    url: http://iwangchen.com
+    icon: "icon-flag"
+  - title: "Github"
+    url: https://www.github.com/lizzzz
+    icon: "icon-github-alt"

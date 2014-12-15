@@ -146,7 +146,6 @@ article .title {
   font-size: 3em;
   background-color: transparent;
   padding-left: 0;
-  color: #1382DA;
 }
 
 article .title a:link,
@@ -159,7 +158,6 @@ article .title a:visited {
 
 article .title a:hover,
 article .title a:active {
-  text-decoration: none;
   color: #1382DA;
 }
 
@@ -232,11 +230,11 @@ a:active {
 
 blockquote {
   font-size: 0.9em;
-  background-color: #fff;
   border-color: #ddd;
-  padding-left: 10px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-left: 46px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;
 }
 
 article .under-article {
@@ -385,13 +383,14 @@ footer a:active {
 .about_me p {
   line-height: 1.5em;
   color: #666;
+  margin-bottom: 10px;
 }
 
 .about_me a:link,
 .about_me a:visited {
   line-height: 1.5em;
   color: #1382DA;
-  padding: 0 1px;
+  padding: 0 auto;
 }
 
 .about_me a:hover,
@@ -500,9 +499,25 @@ ul, ol {
   font-size: 0.1em;
 }
 
+.widget .blogroll {
+  margin: 0;
+  padding-bottom: 0;
+  color: #666;
+}
 
-.tagcloud .entry{
-  width: 100%;  
+.widget .blogroll a:link,
+.widget .blogroll a:visited {
+  font-size: 0.9em;
+  color: #1382DA;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+.widget .blogroll a:hover,
+.widget .blogroll a:active {
+  color: #fff;
+  background-color: #1382DA;
 }
 
 .archive-title:before {
@@ -528,11 +543,11 @@ ul, ol {
 .social-icons p a {
   margin-top: 3px;
   margin-right: 8px;
-  margin-bottom: 3px;
   display: inline-block;
   overflow: hidden;
   width: 24px;
   height: 24px;
+  padding: 0 auto;
  
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -551,9 +566,9 @@ ul, ol {
 
 .social_github {background: url(/img/icons/github.png) no-repeat;}
 .social_weibo {background: url(/img/icons/weibo.png) no-repeat;}
-.social_douban {background: url(/img/icons/douban.png) no-repeat;}
-.social_zhihu {background: url(/img/icons/zhihu.png) no-repeat;}
-.social_mail {background: url(/img/icons/mail.png) no-repeat;}
+.social_douban {background: url(/img/icons/douban_s.png) no-repeat;}
+.social_zhihu {background: url(/img/icons/zhihu_s.png) no-repeat;}
+.social_mail {background: url(/img/icons/mail_s.png) no-repeat;}
 
 
 /* =============================================================================
