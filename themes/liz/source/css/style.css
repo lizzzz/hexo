@@ -199,6 +199,10 @@ article .title span.icon {
   display: block;
 }
 
+article .entry {
+  font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+}
+
 
 h1, h2, h3,h4, h5, h6 {
   font-size: 0.9em;
@@ -235,6 +239,7 @@ blockquote {
   padding-top: 10px;
   padding-bottom: 5px;
   background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;
+  border-left: 3px solid #ddd;
 }
 
 article .under-article {
