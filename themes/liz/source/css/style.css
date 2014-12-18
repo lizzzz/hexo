@@ -369,6 +369,7 @@ footer a:active {
 }
 
 .about_me .entry {
+  font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
   font-size: 0.8em;
   padding: 10px 10px 0 10px;
   display: block;
@@ -571,9 +572,8 @@ ul, ol {
 
 .social_github {background: url(/img/icons/github.png) no-repeat;}
 .social_weibo {background: url(/img/icons/weibo.png) no-repeat;}
-.social_douban {background: url(/img/icons/douban_s.png) no-repeat;}
-.social_zhihu {background: url(/img/icons/zhihu_s.png) no-repeat;}
-.social_mail {background: url(/img/icons/mail_s.png) no-repeat;}
+.social_douban {background: url(/img/icons/douban.png) no-repeat;}
+.social_mail {background: url(/img/icons/mail.png) no-repeat;}
 
 
 /* =============================================================================
