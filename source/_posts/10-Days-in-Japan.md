@@ -15,4 +15,7 @@ tags: [travel]
 **Day 1: 关西空港->京都 [Stay@京都]**
 > 下飞机后从关西空港直奔京都，因为后面还会从这里飞东京，因此买的是ICOCA&HARUKA套票，里面包含一套关西空港往返京都的JR票以及一张储值ICOCA卡(各种贩卖机、便利店都可以使用)，非常划算。
 
+{% img http://7xkerz.com1.z0.glb.clouddn.com/IMG_20150603_164917.jpg ICOCA&HARUKA %}
+
+
 
