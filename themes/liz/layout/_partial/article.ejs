@@ -5,6 +5,9 @@
 <hr>
 
 <div class="row">
+ 	<% if (item.photos && item.photos.length > 0){ %>
+    	<%- partial('post/gallery') %>
+ 	<% } %>
 
 	<div class="col-md-1">
 		<div class="side-icon">
