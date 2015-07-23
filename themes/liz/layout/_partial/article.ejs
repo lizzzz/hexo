@@ -1,22 +1,20 @@
-<div class="under-navbar">
-	<li><i class="icon-th-list"></i> 阅读文章</li>
-</div>
+<% if (!index){ %>
+	<div class="under-navbar">
+		<li><i class="icon-th-list"></i> 阅读文章</li>
+	</div>
+<% } else { %>
+  	<div class="under-navbar">
+		<li><i class="icon-th-list"></i> 最新动态</li>
+	</div>
+<% } %>
 
 <hr>
 
 <div class="row">
- 	<% if (item.photos && item.photos.length > 0){ %>
-    	<%- partial('post/gallery') %>
- 	<% } %>
-
 	<div class="col-md-1">
 		<div class="side-icon">
 			<a href="/">
-				<i class="icon-hand-left icon-2x"></i>
-				<div class="angle">
-					<i class="icon-double-angle-left"></i>
-					<i class="icon-double-angle-left"></i>
-				</div>
+				<i class="icon-hand-right icon-2x"></i>
 			</a>
 		</div>
 	</div>	
@@ -24,8 +22,13 @@
 	<div class="col-md-10">
 		<article>		
 			<!-- title and entry -->										
-			<%- partial('post/title', {item: item}) %>
-			<%- partial('post/entry', {item: item}) %>
+			<%- partial('post/title') %>
+
+			<% if (post.photos && post.photos.length > 0){ %>
+    			<%- partial('post/gallery') %>
+ 			<% } %>
+
+			<%- partial('post/entry') %>
 
 			<hr/>
 
@@ -44,11 +47,11 @@
 				<%- partial('post/share') %>
 			<% } %>
 
-			<% if (!index && theme.duoshuo && item.comments){ %>
+			<% if (!index && theme.duoshuo && post.comments){ %>
 				<%- partial('post/comment', {
-				    key: item.slug,
-				    title: item.title,
-				    url: config.url+url_for(item.path)
+				    key: post.slug,
+				    title: post.title,
+				    url: config.url+url_for(post.path)
 				  }) %>
 				<% } %>
 			
@@ -60,14 +63,14 @@
 			<div class="article-icon">
 				<i class="icon-suitcase"></i>
 			</div>
-			<%- partial('post/category', {item: item, index: index}) %>
+			<%- partial('post/category') %>
 		</div>
 		
 		<div class="article-tag">
 			<div class="article-icon">
 				<i class="icon-tags"></i>
 			</div>
-			<%- partial('post/tag', {item: item, index: index}) %>
+			<%- partial('post/tag') %>
 		</div>
 	</div>
 	

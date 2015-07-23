@@ -1,24 +1,26 @@
-<% if (item.link) { %>
-  <% if (item.title){ %>
-    <div class="title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></div>
+<% if (post.layout != 'page'){ %>
+  <% if (post.link) { %>
+    <% if (post.title){ %>
+      <div class="title"><a href="<%- post.link %>" target="_blank"><%= post.title %></a></div>
+    <% } else { %>
+      <div class="title"><a href="<%- post.link %>" target="_blank"><%= post.link %></a></div>
+    <% } %>
   <% } else { %>
-    <div class="title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></div>
-  <% } %>
-<% } else { %>
-  <% if (index) { %>
-  <!-- display as entry -->
-    <div class="title">
-      <a href="<%- config.root %><%- item.path %>" <% if(item.description) { %>title="<%= item.description %>"<% } %>><%= item.title %></a>
-      <span class="icon"><i class="icon-time"></i> Posted on <%= item.date.format(config.date_format) %></span>
-      <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
-      <hr>
-    </div>
-  <% } else { %>
-    <div class="title">
-      <p><%= item.title %></p>
-      <span class="icon"><i class="icon-time"></i> Posted on <%= item.date.format(config.date_format) %></span>
-      <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
-      <hr>
-    </div>
+    <% if (index) { %>
+    <!-- display as entry -->
+      <div class="title">
+        <a href="<%- config.root %><%- post.path %>" <% if(post.description) { %>title="<%= post.description %>"<% } %>><%= post.title %></a>
+        <span class="icon"><i class="icon-time"></i> Posted on <%= post.date.format(config.date_format) %></span>
+        <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
+        <hr>
+      </div>
+    <% } else { %>
+      <div class="title">
+        <p><%= post.title %></p>
+        <span class="icon"><i class="icon-time"></i> Posted on <%= post.date.format(config.date_format) %></span>
+        <span class="icon"><i class="icon-edit"></i> Edited by <a href="/about" target="_BLANK">Liz</a> </span>
+        <hr>
+      </div>
+    <% } %>
   <% } %>
 <% } %>

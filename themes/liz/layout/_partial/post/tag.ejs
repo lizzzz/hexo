@@ -1,9 +1,8 @@
-<% if (item.tags && item.tags.length){ %>
-  <%
-  item.tags.forEach(function(tag){ %>    
-  <div>
-  	   <a href="<%=config.root%><%=tag.path%>"><%= tag.name %></a>
-  </div>
+<% if (post.tags && post.tags.length > 0){ %>
+  <%post.tags.forEach(function(tag){ %>    
+  	<div>
+  	   <a href="<%-config.root%><%-tag.path%>"><%= tag.name %></a>
+ 	</div>
   <%  
   });
   %>
