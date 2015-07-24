@@ -1,15 +1,3 @@
-<% if (!index){ %>
-	<div class="under-navbar">
-		<li><i class="icon-th-list"></i> 阅读文章</li>
-	</div>
-<% } else { %>
-  	<div class="under-navbar">
-		<li><i class="icon-th-list"></i> 最新动态</li>
-	</div>
-<% } %>
-
-<hr>
-
 <div class="row">
 	<div class="col-md-1">
 		<div class="side-icon">
@@ -29,8 +17,6 @@
  			<% } %>
 
 			<%- partial('post/entry') %>
-
-			<hr/>
 
 			<% if (is_post() == true) { %>
 				<div class="under-article">
