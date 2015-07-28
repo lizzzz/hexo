@@ -810,3 +810,38 @@ ul, ol {
   content: '\f054';
   right: 10px;
 }
+
+
+/* =============================================================================
+   archives
+   ========================================================================== */
+
+
+.archives-wrapper {
+
+}
+
+.archives-year {
+  font-size: 2em;
+  font-family: Candara, arial;
+  font-style: italic;
+  text-shadow: rgba(255,255,255,0.9) 0 1px 0;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.archives-year a:link,
+.archives-year a:visited {
+  text-decoration: none;
+  color: #1382DA;
+}
+
+.archives-year a:hover, 
+.archives-year a:active {
+}
+
+.archives-year a:after {
+  content: '\f08e';
+  font: 6px FontAwesome;
+  vertical-align: super;
+}

@@ -40,17 +40,18 @@ if (is_category()) {
         </div></section>
       <% } %>
       <% last = year; %>
-      <section class="archives-wrapper">
+      <div class="archives-wrapper">
         <% if (!title) { %>
-        <h2 class="archives-title archives-year">
+        <div class="archives-year">
           <a href="<%- config.root %>archives/<%= year %>"><%= year %></a>
-        </h2>
+        </div>
+        <hr>
         <% } %>
         <div class="archives">
     <% } %>
     <%- partial('archive-post', {post: post}) %>
   <% }) %>
   <% if (page.posts.length){ %>
-    </div></section>
+    </div></div>
   <% } %>
 <% } %>
