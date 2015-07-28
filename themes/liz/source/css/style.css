@@ -691,7 +691,7 @@ ul, ol {
    share
    ========================================================================== */
 
-.share {
+.post_share {
   display: block;
   margin: 30px 0;
   float: left;
@@ -705,6 +705,7 @@ ul, ol {
   text-decoration: none;
   line-height: 18px!important;
   padding-left: 5px;
+  color: #999;
 }
 
 /* =============================================================================
