@@ -17,16 +17,15 @@ if (is_category()) {
 %>
 
 <% if (title) { %>
-<h2 class="<%= classes %>"><span><%= title %></span></h2>
+  <h2 class="<%= classes %>"><span><%= title %></span></h2>
 <% } %>
 
-<% if (pagination == 2){ %>
+<% if (pagination == 2){ %><!-- index -->
   <% page.posts.each(function(post){ %>
     <%- partial('article', {post: post, index: true}) %>
   <% }); %>
-
   <%- partial('pagination') %>
-<% } else { %>
+<% } else { %><!-- not index -->
   <% var last; %>
   <% page.posts.each(function(post, i){ %>
     <% var year = post.date.year(); %>

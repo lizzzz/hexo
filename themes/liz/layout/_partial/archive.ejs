@@ -17,41 +17,49 @@ if (is_category()) {
 %>
 
 <% if (title) { %>
-<h2 class="<%= classes %>"><span><%= title %></span></h2>
+  <h2 class="<%= classes %>"><span><%= title %></span></h2>
 <% } %>
 
 <%- partial('banner') %>
 
-<% if (pagination == 2){ %>
+<% if (pagination == 2){ %> <!-- index -->
   <% page.posts.each(function(post){ %>
     <%- partial('article', {post: post, index: true}) %>
   <% }); %>
 
-<center>
-  <%- partial('pagination') %>
-</center>
+  <center>
+    <%- partial('pagination') %>
+  </center>
 
-<% } else { %>
-  <% var last; %>
-  <% page.posts.each(function(post, i){ %>
-    <% var year = post.date.year(); %>
-    <% if (last != year){ %>
-      <% if (last != null){ %>
-        </div></section>
-      <% } %>
-      <% last = year; %>
+<% } else { %> <!-- not index -->
+  <div class="row">
+    <div class="col-md-1">
+      <%- partial('left') %>
+    </div><!-- col-md-1 -->
+
+    <div class="col-md-10">
       <div class="archives-wrapper">
-        <% if (!title) { %>
-        <div class="archives-year">
-          <a href="<%- config.root %>archives/<%= year %>"><%= year %></a>
-        </div>
-        <hr>
-        <% } %>
-        <div class="archives">
-    <% } %>
-    <%- partial('archive-post', {post: post}) %>
-  <% }) %>
-  <% if (page.posts.length){ %>
-    </div></div>
-  <% } %>
+
+        <% var last; %>
+        <% page.posts.each(function(post){ %>
+          <% var year = post.date.year(); %>
+
+          <% if (last != year){ <!-- another year -->
+            last = year; %>
+            <div class="archives-year">
+              <a href="<%- config.root %>archives/<%= year %>"><%= year %></a>
+            </div><!-- archives-year -->
+            <hr>
+          <% } %> <!-- another year -->
+
+          <div class="archives">
+            <%- partial('archive-post', {post: post}) %>
+          </div><!-- archives -->
+        <% }) %><!-- each -->
+        <center>
+          <%- partial('pagination') %>
+        </center>
+      </div><!--archives-wrapper -->
+    </div><!-- col-md-10 -->
+  </div><!-- row -->
 <% } %>
