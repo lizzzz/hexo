@@ -43,5 +43,15 @@ if (is_category()) {
 		</div>
 		<hr>
 	<% } %>
+<% } else if (banner == 'tag') { %>
+	<% if (title) { %>
+		<div class="under-navbar">
+			<li>
+				<i class="icon-th-list"></i> 标签为
+				<span class="archive-top-icon"><%= title %><i class="icon-paper-clip"></i></span>
+				的归档
+			</li>
+		</div>
+		<hr>
+	<% } %>
 <% } %>
-
