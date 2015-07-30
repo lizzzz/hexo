@@ -608,10 +608,9 @@ ul, ol {
   background-color: transparent;
 }
 
-.social_github {background: url(/img/icons/github.png) no-repeat;}
-.social_weibo {background: url(/img/icons/weibo.png) no-repeat;}
-.social_douban {background: url(/img/icons/douban.png) no-repeat;}
-.social_mail {background: url(/img/icons/mail.png) no-repeat;}
+.social_github {background: url(/img/icons/git.png) no-repeat;}
+.social_weibo {background: url(/img/icons/sina.png) no-repeat;}
+.social_qq {background: url(/img/icons/qq.png) no-repeat;}
 
 
 /* =============================================================================
