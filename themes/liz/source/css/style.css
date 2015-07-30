@@ -521,7 +521,7 @@ ul, ol {
 }
 
 .tag_box li a:link,
-.tag_box li a.visited {
+.tag_box li a:visited {
   padding: 1px 5px;
   margin: 5px 5px 5px 0;
   background-color: transparent;
@@ -620,7 +620,7 @@ ul, ol {
 .article-icon { 
   display: block;
   padding-left: 2px;
-  color: #666;
+  color: #333;
 }
 
  .article-tag, .article-category {
@@ -899,13 +899,19 @@ ul, ol {
 .archive-tag a:visited {
   font-size: 0.9em;
   color: #1382DA;
+  padding: 0 2px;
 }
 
 .archive-tag a:hover,
 .archive-tag a:active {
-
+  color: #fff;
+  background: #1382DA;
 }
 
 .archive-tag span {
   font-size: 0.9em;
+}
+
+.archive-top-icon {
+  color: #DE4E38;
 }

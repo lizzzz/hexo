@@ -54,9 +54,12 @@ share: true
 baidu_tongji: true
 
 links:
+  - title: 羊毛党俱乐部 | 一起薅羊毛吧
+    url: http://ymd.club
+    icon: "icon-gift"
+  - title: Github
+    url: https://www.github.com/lizzzz
+    icon: "icon-github-alt"
   - title: Homepage
     url: http://iwangchen.com
     icon: "icon-flag"
-  - title: "Github"
-    url: https://www.github.com/lizzzz
-    icon: "icon-github-alt"
