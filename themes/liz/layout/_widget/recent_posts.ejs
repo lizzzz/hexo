@@ -9,8 +9,11 @@
       <ul class="post-list">
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
+            <i class="icon-paper-clip"></i>
             <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+            <span><%= post.date.format(config.date_format) %></span>
           </li>
+
         <% }) %>
       </ul>
   </div>
