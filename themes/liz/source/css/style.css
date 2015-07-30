@@ -890,3 +890,23 @@ ul, ol {
 .archive-post {
   margin-left: 30px;
 }
+
+.archive-tag {
+  float: right;
+  display: inline;
+}
+
+.archive-tag a:link,
+.archive-tag a:visited {
+  font-size: 0.9em;
+  color: #1382DA;
+}
+
+.archive-tag a:hover,
+.archive-tag a:active {
+
+}
+
+.archive-tag span {
+  font-size: 0.9em;
+}
