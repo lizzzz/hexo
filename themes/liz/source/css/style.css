@@ -821,8 +821,19 @@ ul, ol {
 
 }
 
+.archives {
+  border-left: 0.5em solid #CCC;
+}
+
+.archives hr {
+  margin: 4px 0 16px 0;
+}
+.archives:hover {
+  border-left: 0.5em solid #1382DA;
+}
+
 .archives-year {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: Candara, arial;
   font-style: italic;
   text-shadow: rgba(255,255,255,0.9) 0 1px 0;
@@ -844,4 +855,38 @@ ul, ol {
   content: '\f08e';
   font: 6px FontAwesome;
   vertical-align: super;
+}
+
+
+.archive-date {
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+.archive-date a:link,
+.archive-date a:visited {
+  color: #1382DA;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.archive-date a:hover,
+.archive-date a:active {
+  
+}
+
+.archive-post-title a:link,
+.archive-post-title a:visited {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+.archive-post-title a:hover,
+.archive-post-title a:active {
+  
+}
+
+.archive-post {
+  margin-left: 30px;
 }

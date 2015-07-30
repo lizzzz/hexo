@@ -45,6 +45,9 @@ if (is_category()) {
           <% var year = post.date.year(); %>
 
           <% if (last != year){ <!-- another year -->
+            if (last != null) { %>
+              <br>
+            <% }
             last = year; %>
             <div class="archives-year">
               <a href="<%- config.root %>archives/<%= year %>"><%= year %></a>
