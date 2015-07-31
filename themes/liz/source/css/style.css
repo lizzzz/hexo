@@ -199,12 +199,16 @@ article .title span a:active {
 }
 
 
-article .title span.icon {
+article .title p.icon {
   font-size: 0.2em;
   margin-top: 0;
   margin-bottom: 5px;
   color: #666;
   display: block;
+}
+
+.title #busuanzi_value_page_pv {
+  color: #DE4E38;
 }
 
 article .entry {
@@ -378,6 +382,10 @@ footer a:active {
   color: #fff;
   background-color: #1382DA;
   text-decoration: none;
+}
+
+footer span #busuanzi_value_site_uv{
+  color: #DE4E38;
 }
 
 
