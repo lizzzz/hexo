@@ -10,15 +10,15 @@
     <!-- display as entry -->
       <div class="title">
         <a href="<%- config.root %><%- post.path %>" <% if(post.description) { %>title="<%= post.description %>"<% } %>><%= post.title %></a>
-        <span class="icon"><i class="icon-time"></i> posted on <%= post.date.format(config.date_format) %></span>
-        <span class="icon"><i class="icon-edit"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
+        <span class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></span>
+        <span class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
         <hr>
       </div>
     <% } else { %>
       <div class="title">
         <p><%= post.title %></p>
-        <span class="icon"><i class="icon-time"></i> posted on <%= post.date.format(config.date_format) %></span>
-        <span class="icon"><i class="icon-edit"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
+        <span class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></span>
+        <span class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
         <hr>
       </div>
     <% } %>
