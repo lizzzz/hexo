@@ -5,10 +5,11 @@
 # Site
 title: 懒人的站
 subtitle: 
-description: liz's blog
+description: 懒人的站
 author: Liz
 email:
 language:
+cover: http://iwangchen.com/favicon.ico
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -81,6 +82,18 @@ disqus_shortname:
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
 theme: liz
 exclude_generator:
+
+# rss
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# sitemap
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

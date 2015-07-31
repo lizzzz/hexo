@@ -42,12 +42,13 @@
     <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
 
-  <% if (theme.rss){ %>
-    <link rel="alternative" href="<%- config.root %><%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+  <% if (theme.feed){ %>
+    <link rel="alternative" href="<%- config.root %><%- theme.feed.path %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
     <link href="<%- config.root %><%- theme.favicon %>" rel="icon">
   <% } %> 
+  <link rel="canonical" href="http://iwangchen.com/">
 
 
   <!-- Bootstrap Core CSS -->
