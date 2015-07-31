@@ -43,10 +43,10 @@ favicon: favicon.ico
 about_me:
   img: about_me.jpg
   texts:
-  - <a href="/about" target="_BLANK">WangChen(Liz)</a>
+  - <a href="/about" target="_BLANK">Wang Chen (Liz)</a>
   - 位置：北京 天津 青岛
-  - 角色：伪搬砖 前PM
-  - 技能：暂无
+  - 角色：金融搬砖工
+  - 描述：一枚傲娇的懒大王
   github: img/icons/github_icon.png
   weibo: img/icons/weibo_icon.png
   douban: img/icons/douban_icon.png

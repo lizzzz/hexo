@@ -8,7 +8,7 @@
 } 
 
 .container-narrow {
-  max-width: 980px;
+  max-width: 999px;
   margin: 0 auto;
 }
 
@@ -308,6 +308,7 @@ a:focus {
   margin-bottom: 20px;
   padding: 1px 3px;
   font-size: 0.9em;
+  border-radius: 0;
 }
 
 .btn-primary:hover,
