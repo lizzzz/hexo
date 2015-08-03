@@ -19,7 +19,7 @@
             <i class="icon-th-large"></i>
             <%- partial('category') %>
           </span>
-          <span>
+          <span class="icon">
             <i class="icon-tags"></i>
             <%- partial('tag') %>
           </span>
@@ -29,13 +29,23 @@
     <% } else { %>
       <div class="title">
         <p><%= post.title %></p>
-        <span class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></span>
-        <span class="icon">
-          <i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a>
-          <span id="busuanzi_container_page_pv">
-            <i class="icon-spinner"></i> viewed <span id="busuanzi_value_page_pv"></span>
+        <div class="under-title">
+          <span class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></span>  
+        </div>
+        <div class="under-title">
+          <span class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
+          <span class="icon">
+            <i class="icon-th-large"></i>
+            <%- partial('category') %>
           </span>
-        </span>
+          <span class="icon">
+            <i class="icon-tags"></i>
+            <%- partial('tag') %>
+          </span>
+          <span id="busuanzi_container_page_pv">
+             <i class="icon-heart"></i><span id="busuanzi_value_page_pv"></span> viewed
+          </span>
+        </div>  
         <hr>
       </div>
     <% } %>
