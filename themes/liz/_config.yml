@@ -1,11 +1,15 @@
 menu: 
+  - title: 首页
+    url: 
+    #intro: "首页"
+    icon: "icon-home"
   - title: 关于
     url: about
-    #intro: "关于懒人"
+    #intro: "关于"
     icon: "icon-user"
   - title: 归档
     url: archives
-    #intro: "全部归档"
+    #intro: "归档"
     icon: "icon-key"
   - title: 阅读
     url: reading
