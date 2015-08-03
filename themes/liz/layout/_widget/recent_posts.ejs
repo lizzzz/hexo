@@ -11,7 +11,16 @@
           <li>
             <i class="icon-paper-clip"></i>
             <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
-            <span><%= post.date.format(config.date_format) %></span>
+            <span class="recent-post-category">
+              <% if (post.categories && post.categories.length > 0){ %>
+                <%post.categories.forEach(function(category){ %>    
+                  <a href="<%-config.root%><%-category.path%>"><%= category.name %></a>
+                <%  
+                });
+                %>
+              <% } %>
+            </span>
+            <span id="class-recent">分类于</span>
           </li>
 
         <% }) %>
