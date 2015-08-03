@@ -1,6 +1,6 @@
 title: Hello World
 date:  2014-01-18 22:55:59
-categories: [note]
+categories: [笔记]
 tags: [hexo]
 ---
 Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).

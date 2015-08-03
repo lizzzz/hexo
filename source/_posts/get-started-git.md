@@ -1,6 +1,6 @@
 title: 初识Git
 date: 2014-12-01 10:57:35
-categories: [note]
+categories: [笔记]
 tags: [git, github]
 ---
 学习`Git`的笔记，未完待续。

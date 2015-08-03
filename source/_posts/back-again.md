@@ -1,7 +1,7 @@
 title: 又回故地
 date: 2014-04-08 15:03:43
-categories: [life]
-tags: [article]
+categories: [随笔]
+tags: [游记, 无锡, 江南大学]
 ---
 去年写了很多日记，不过都隐藏了。从今开始，日记一律公开，嗯。
 
