@@ -11,19 +11,19 @@
       <div class="title">
         <a href="<%- config.root %><%- post.path %>" <% if(post.description) { %>title="<%= post.description %>"<% } %>><%= post.title %></a>
         <p class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></p>
-        <p class="icon">
-          <i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a>
-          <span id="busuanzi_container_page_pv">
-            <i class="icon-spinner"></i> viewed <span id="busuanzi_value_page_pv"></span>
-          </span>
-        </p>
+        <p class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </p>       
         <hr>
       </div>
     <% } else { %>
       <div class="title">
         <p><%= post.title %></p>
         <p class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></p>
-        <p class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </p>
+        <p class="icon">
+          <i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a>
+          <span id="busuanzi_container_page_pv">
+            <i class="icon-spinner"></i> viewed <span id="busuanzi_value_page_pv"></span>
+          </span>
+        </p>
         <hr>
       </div>
     <% } %>
