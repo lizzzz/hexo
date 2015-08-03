@@ -950,3 +950,15 @@ ul.post-list span {
 .archive-top-icon {
   color: #DE4E38;
 }
+
+#totop img{
+   position: fixed;
+   bottom: 30px;
+   right: 150px;
+   cursor: pointer;
+   opacity: .5;
+}
+
+#totop img:hover {
+  opacity: 1;
+}
