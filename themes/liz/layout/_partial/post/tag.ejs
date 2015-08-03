@@ -1,8 +1,6 @@
 <% if (post.tags && post.tags.length > 0){ %>
   <%post.tags.forEach(function(tag){ %>    
-  	<div class="post-tags">
-  	   <a href="<%-config.root%><%-tag.path%>"><%= tag.name %></a>
- 	</div>
+  	<span><a href="<%-config.root%><%-tag.path%>"><%= tag.name %></a></a></span>
   <%  
   });
   %>

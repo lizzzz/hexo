@@ -25,8 +25,8 @@ body {
 }
 
 img, video {
-  max-width: 517px;
-  max-height: 517px;
+  max-width: 560px;
+  max-height: 560px;
   border: none;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -40,11 +40,10 @@ img, video {
   padding: 0;
 }
 
-.col-md-10 {
+.col-md-11 {
   padding-left: 0;
-  padding-right: 20px;
+  padding-right: 35px;
 }
-
 
 /* =============================================================================
    navbar
@@ -198,13 +197,16 @@ article .title span a:active {
   padding: 0 2px;
 }
 
-
-article .title p.icon {
+.under-title {
+  margin: 0;
   font-size: 0.2em;
+}
+
+article .title span.icon {
   margin-top: 0;
   margin-bottom: 5px;
+  margin-right: 20px;
   color: #666;
-  display: block;
 }
 
 .title #busuanzi_value_page_pv {
@@ -348,7 +350,7 @@ hr {
 }
 
 .caption:before {
-  content: '\f040';
+  content: '\f03e';
   position: absolute;
   font: .9em "FontAwesome";
   position: absolute;

@@ -1,8 +1,6 @@
 <% if (post.categories && post.categories.length > 0){ %>
   <%post.categories.forEach(function(category){ %>    
-  	<div>
-  	   <a href="<%-config.root%><%-category.path%>"><%= category.name %></a>
-  	</div>
+  	<span><a href="<%-config.root%><%-category.path%>"><%= category.name %></a></span>
   <%  
   });
   %>

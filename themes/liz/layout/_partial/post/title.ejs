@@ -10,20 +10,32 @@
     <!-- display as entry -->
       <div class="title">
         <a href="<%- config.root %><%- post.path %>" <% if(post.description) { %>title="<%= post.description %>"<% } %>><%= post.title %></a>
-        <p class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></p>
-        <p class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </p>       
+        <div class="under-title">
+          <span class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></span>  
+        </div>
+        <div class="under-title">
+          <span class="icon"><i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a> </span>
+          <span class="icon">
+            <i class="icon-th-large"></i>
+            <%- partial('category') %>
+          </span>
+          <span>
+            <i class="icon-tags"></i>
+            <%- partial('tag') %>
+          </span>
+        </div>  
         <hr>
       </div>
     <% } else { %>
       <div class="title">
         <p><%= post.title %></p>
-        <p class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></p>
-        <p class="icon">
+        <span class="icon"><i class="icon-signin"></i> posted on <%= post.date.format(config.date_format) %></span>
+        <span class="icon">
           <i class="icon-pencil"></i> edited by <a href="/about" target="_BLANK">Liz</a>
           <span id="busuanzi_container_page_pv">
             <i class="icon-spinner"></i> viewed <span id="busuanzi_value_page_pv"></span>
           </span>
-        </p>
+        </span>
         <hr>
       </div>
     <% } %>
