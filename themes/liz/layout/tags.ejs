@@ -1,12 +1,21 @@
 <!-- add new page layout 'tags' -->
-<section class="layout-wrap">
+<%- partial('_partial/banner', {banner: 'tags'}) %>
+<div class="all-tags">
   <div class="layout-title">
-    <i class="fa fa-tags"></i>
-    <span><%= page.title %></span>
+    目前共计<span> <%= site.tags.length %><i class="icon-paper-clip"></i></span> 个标签
   </div>
-  <div class="layout-wrap-inner tag-cloud">
-    <% if(site.tags.length) { %>
-      <%- tagcloud({min_font: 14, max_font: 28}) %>
-    <% } %>
+  <div class="layout-wrap-inner">
+    <% site.tags.each(function(item){ %>
+		<span><a href="<%- config.root %><%- item.path %>"><%= item.name %><span id="upper-length"><%= item.posts.length %></span></a></span>
+		<% }); %>
   </div>
-</section>
+</div>
+<div class="tags-duoshuo">
+	<% if (theme.duoshuo){ %>
+		<%- partial('_partial/post/comment', {
+		    key: page.layout,
+		    title: page.title,
+		    url: config.url+url_for(page.path)
+		  }) %>
+	<% } %>
+</div>
