@@ -558,37 +558,33 @@ ul.post-list .recent-post-category a:active {
 
 .tag_box.inline li {
   float: left;
-  background-color: #1382DA;
-  border-radius: 1px;
-  border: 1px dashed #1382DA;
   margin: 0 10px 12px 0;
-  padding: 2px 6px 5px 5px;
+  padding: 2px 2px 5px 2px;
   line-height: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .tag_box.inline li:hover {
-  background-color: transparent;
+  border-bottom: 1px solid #333;
 }
 
 .tag_box li a:link,
 .tag_box li a:visited {
-  text-decoration: none;
   font-size: 0.8em;
   line-height: 10px;
-  background-color: #1382DA;
-  color: #FFF;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
 }
 
 .tag_box li a:hover,
 .tag_box li a:active {
-  background-color: transparent;
-  color: #1382DA;
 }
 
 .tag_box  li a span {
   vertical-align:super;
   font-size: 0.2em;
-  line-height: 10px;
+  color: #DE4E38;
 }
 
 .widget .blogroll {

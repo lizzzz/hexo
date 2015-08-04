@@ -6,13 +6,7 @@
 		<a href="<%- config.root %><%- post.path %>"><%= post.title %></a>
 		<div class="archive-tag">
 			<span class="icon"><i class="icon-tags"></i></span>
-			<span>Tags </span>
-			<% if (post.tags && post.tags.length > 0){ %>
-	  			<%post.tags.forEach(function(tag){ %> 
-	  				<span>| </span>
-	  	  	 		<a href="<%-config.root%><%-tag.path%>"><%= tag.name %></a>
-				<% }); %>
-			<% } %>
+			<%- partial('post/tag') %>
 		</div><!-- archive-tag -->
 	</div>
 </div>
