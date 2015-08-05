@@ -238,11 +238,32 @@ h1, h2, h3,h4, h5, h6 {
 blockquote {
   font-size: 0.9em;
   border-color: #ddd;
-  padding-left: 46px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;
+  /*background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;*/
   border-left: 3px solid #ddd;
+  padding: 6px 12px 8px 12px;
+}
+
+blockquote:hover {
+  border-left: 3px solid #999;
+  background: #f5f5f5;
+}
+
+
+blockquote p:before {
+  content: '\f10d';
+  font: 17px FontAwesome;
+  color: #1382DA;
+  vertical-align: super;
+  padding: 2px 7px 2px 2px;
+}
+
+blockquote p:after {
+  content: '\f10e';
+  font: 17px FontAwesome;
+  color: #1382DA;
+  vertical-align: bottom;
+  padding: 2px 7px 2px 2px;
+}
 }
 
 article .under-article {
