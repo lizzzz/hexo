@@ -2,23 +2,23 @@ menu:
   - title: 首页
     url: 
     #intro: "首页"
-    icon: "icon-home"
+    icon: "fa fa-flash on fa-fw"
   - title: 关于
     url: about
     #intro: "关于"
-    icon: "icon-user"
+    icon: "fa fa-meh-o fa-fw"
   - title: 归档
     url: archives
     #intro: "归档"
-    icon: "icon-key"
+    icon: "fa fa-clone fa-fw"
   - title: 阅读
     url: reading
     #intro: "阅读"
-    icon: "icon-book"
+    icon: "fa fa-venus-mars fa-fw"
   - title: 电影
     url: film
     #intro: "电影"
-    icon: "icon-film"
+    icon: "fa fa-tv fa-fw"
 
 widgets:
 - about_me
@@ -42,7 +42,7 @@ fancybox: true
 google_analytics: 
 rss:
 
-favicon: favicon.ico
+favicon: img/iwangchen.ico
 
 about_me:
   img: about_me.jpg
@@ -57,7 +57,7 @@ about_me:
   zhihu: img/icons/zhihu_icon.png
   linkedin: img/icons/linkedin_icon.png
   qq: img/icons/qq_icon.png
-  
+
 duoshuo: iwangchen
 share: true
 baidu_tongji: true
@@ -65,10 +65,10 @@ baidu_tongji: true
 links:
   - title: 羊毛党俱乐部 | 一起薅羊毛吧
     url: http://ymd.club
-    icon: "icon-gift"
+    #icon: "icon-gift"
   - title: Github
     url: https://www.github.com/lizzzz
-    icon: "icon-github-alt"
+    #icon: "icon-github-alt"
   - title: Homepage
     url: http://iwangchen.com
-    icon: "icon-flag"
+    #icon: "icon-flag"

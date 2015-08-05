@@ -19,20 +19,20 @@ if (is_category()) {
 <!-- Banner -->
 <% if (banner == 'index'){ %>
 	<div class="under-navbar">
-		<li><i class="icon-th-list"></i> 最新动态</li>
+		<li><i class="fa fa-th-list fa-fw"></i> 最新动态</li>
 	</div>
 	<hr>
 <% } else if (banner == 'post') { %>
   	<div class="under-navbar">
-		<li><i class="icon-th-list"></i> 阅读文章</li>
+		<li><i class="fa fa-th-list fa-fw"></i> 阅读文章</li>
 	</div>
 	<hr>
 <% } else if (banner == 'archive') { %>
 	<% if (title) { %>
 		<div class="under-navbar">
 			<li>
-				<i class="icon-th-list"></i> 分类为
-				<span class="archive-top-icon"><%= title %><i class="icon-paper-clip"></i></span>
+				<i class="fa fa-th-list fa-fw"></i> 分类为
+				<span class="archive-top-icon"><%= title %><i class="fa fa-paperclip fa-fw"></i></span>
 				的归档
 				<span id="all_categories"><a href="<%- config.root %>categories">全部分类</a></span>
 			</li>
@@ -40,7 +40,7 @@ if (is_category()) {
 		<hr>
 	<% } else { %>
 		<div class="under-navbar">
-			<li><i class="icon-th-list"></i> 归档目录</li>
+			<li><i class="fa fa-th-list fa-fw"></i> 归档目录</li>
 		</div>
 		<hr>
 	<% } %>
@@ -48,8 +48,8 @@ if (is_category()) {
 	<% if (title) { %>
 		<div class="under-navbar">
 			<li>
-				<i class="icon-th-list"></i> 标签为
-				<span class="archive-top-icon"><%= title %><i class="icon-paper-clip"></i></span>
+				<i class="fa fa-th-list fa-fw"></i> 标签为
+				<span class="archive-top-icon"><%= title %><i class="fa fa-paperclip fa-fw"></i></span>
 				的归档
 				<span id="all_categories"><a href="<%- config.root %>tags">全部标签</a></span>
 			</li>
@@ -59,13 +59,13 @@ if (is_category()) {
 <% } else if (banner == 'tags') { %>
 	<div class="under-navbar">
 		<li>
-			<i class="icon-th-list"></i> 全部标签</li>
+			<i class="fa fa-th-list fa-fw"></i> 全部标签</li>
 	</div>
 	<hr>
 <% } else if (banner == 'categories') { %>
 	<div class="under-navbar">
 		<li>
-			<i class="icon-th-list"></i> 全部分类</li>
+			<i class="fa fa-th-list fa-fw"></i> 全部分类</li>
 	</div>
 	<hr>
 <% } %>

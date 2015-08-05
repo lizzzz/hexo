@@ -82,13 +82,13 @@ img, video {
   height: 30px;
   padding-top: 5px;
   padding-left: 10px;
-  color: #fff;
+  color: #eee;
   font-size: 1em;
 }
 
 .navbar-default .navbar-brand:hover, 
 .navbar-default .navbar-brand:focus {
-    color: #eee;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -159,7 +159,7 @@ article .title a:link,
 article .title a:visited {
   text-decoration: none;
   background-color: transparent;
-  padding: 0 8px 0 0;
+  padding: 0;
   color: #1382DA;
 }
 
@@ -227,18 +227,7 @@ h1, h2, h3,h4, h5, h6 {
 .side-icon{
   padding-top: 10px;
   padding-left: 8px;
-}
-
-.side-icon a:link,
-a:visited {
-  color: #666;
-  text-decoration: none;
-}
-
-.side-icon a:hover,
-a:active {
-  color: #1382DA;
-  text-decoration: none;
+  color: #333;
 }
 
 .side-icon .angle {
@@ -608,6 +597,7 @@ ul.post-list .recent-post-category a:active {
   background-color: #1382DA;
 }
 
+/*
 .archive-title:before {
   font-family: FontAwesome;
   content: '\f187  ';
@@ -622,6 +612,7 @@ ul.post-list .recent-post-category a:active {
   font-family: FontAwesome;
   content: '\f07b  ';
 }
+*/
 
 
 /* =============================================================================
@@ -748,15 +739,12 @@ ul.post-list .recent-post-category a:active {
   padding: 0;
 }
 
-.jiathis_txt {
+.jia-icon {
+  color: #000;
   float: left;
-  font-size: 1em;
-  text-decoration: none;
-  line-height: 18px!important;
-  padding-left: 5px;
-  color: #999;
+  margin: 0 6px 0 0;
+  font-size: 1.4em;
 }
-
 /* =============================================================================
    gallery
    ========================================================================== */
@@ -933,7 +921,6 @@ ul.post-list .recent-post-category a:active {
 
 .archive-post-title a:hover,
 .archive-post-title a:active {
-  
 }
 
 .archive-post {

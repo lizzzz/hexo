@@ -2,14 +2,14 @@
 <% if (site.posts.length){ %>
   <div class="widget">
     <div class="widget-icon">
-      <i class="icon-tasks"></i>
+      <i class="fa fa-calendar-check-o fa-fw"></i>
       <p><%= __('recent_posts') %> · · · · · · · · · · · (<a href="/archives">全部</a>)</p>
     </div>
 
       <ul class="post-list">
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
-            <i class="icon-paper-clip"></i>
+            <i class="fa fa-chain fa-fw"></i>
             <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
             <span class="recent-post-category">
               <% if (post.categories && post.categories.length > 0){ %>
