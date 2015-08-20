@@ -43,11 +43,12 @@ figure.highlight {
   padding: 3px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-left: 3px solid #ddd;
+  border-left: 2px solid #ddd;
   line-height:1.6;
   overflow: auto;
   position: relative;
   font-size: 0.8em;
+  margin-left: 18px;
 }
 figure.highlight figcaption {
   color: #1382DA;
@@ -111,7 +112,7 @@ code {
   font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace, Verdana, Aril, sans-serif;
   background-color: #ddd;
   border: 1px solid #ccc;
-  padding: 1px 3px 0 3px;
+  padding: 1px 0 0 0;
   margin: 0 3px;
   color: #666;
   font-size: 0.8em;

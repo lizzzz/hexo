@@ -45,6 +45,16 @@ img, video {
   padding-right: 35px;
 }
 
+.entry p {
+  margin: 0 0 10px 18px;
+}
+
+b, strong {
+  color: #DE4E38;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
 /* =============================================================================
    navbar
    ========================================================================== */
@@ -218,10 +228,28 @@ article .entry {
 }
 
 
-h1, h2, h3,h4, h5, h6 {
+h3,h4, h5, h6 {
   font-size: 0.9em;
   color: #666;
-  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.2em;
+  border-left: 3px solid #ccc;
+  padding: 5px 0 5px 15px;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+h1:hover {
+  border-left: 3px solid #1382DA;
+}
+
+h2 {
+  font-size: 1em;
+  color: #333;
+  border-left: 3px solid #ccc;
+  padding: 3px 0 3px 15px;
 }
 
 .side-icon{
@@ -274,12 +302,13 @@ blockquote {
   font-size: 0.9em;
   border-color: #ddd;
   /*background: url("/img/blockquote.png") no-repeat scroll 10px 10px #fff;*/
-  border-left: 3px solid #ddd;
+  border-left: 2px solid #ddd;
   padding: 6px 12px 8px 12px;
+  margin-left: 18px;
 }
 
 blockquote:hover {
-  border-left: 3px solid #999;
+  border-left: 2px solid #999;
   background: #f5f5f5;
 }
 
@@ -463,6 +492,7 @@ footer span #busuanzi_value_site_uv{
   line-height: 1.5em;
   color: #666;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .about_me a:link,
