@@ -5,17 +5,16 @@ tags: [git, github]
 ---
 学习`Git`的笔记，未完待续。
 
-##创建版本库
----
-
+#1. 创建版本库
 将目录变成`Git`可以管理的版本库
 
 ```bash
 $ git init
 ```
 
-##把文件添加到版本库
 ---
+
+#2. 把文件添加到版本库
 把文件添加到版本库
 
 ```bash
@@ -29,25 +28,25 @@ $ git add <file>
 $ git commit -m "wrote a readme file"
 ```
 
-##版本库状态
 ---
+
+#3. 版本库状态
 仓库当前的状态
 
 ```bash
 $ git status
 ```
 
+<!--more-->
+
 查看`difference`
 
 ```bash
 $ git diff
 ```
-
-<!--more-->
-
-
-##日志
 ---
+
+#4. 日志
 显示从最近到最远的提交日志
 
 ```bash
@@ -71,7 +70,9 @@ cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
 $ git reflog
 ```
 
-##版本回退
+---
+
+#5. 版本回退
 ---
 在`Git`中，用`HEAD`表示当前版本，上一个版本就是`HEAD^`，上上一个版本就是`HEAD^^`，当然往上100个版本写100个^比较容易数不过来，所以写成 `HEAD~100`。
 
@@ -81,17 +82,18 @@ $ git reflog
 $ git reset <commit_id>
 ```
 
-##撤销修改
 ---
+
+#6. 撤销修改
 将工作区的修改全部撤销
 
 ```bash
 $ git checkout -- <file>
 ```
 
-##丢弃本地修改 与最新版本同步
 ---
 
+#7. 丢弃本地修改 与最新版本同步
 ```bash
 $ git reset --hard
 $ git pull
