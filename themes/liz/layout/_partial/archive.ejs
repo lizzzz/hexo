@@ -2,7 +2,17 @@
 
 <% if (pagination == 2){ %> <!-- index -->
   <% page.posts.each(function(post){ %>
-    <%- partial('article', {post: post, index: true}) %>
+    <% var display = true; %>
+    <% if (post.categories && post.categories.length > 0)  { 
+      post.categories.forEach(function(category){
+        if (category.name == '笔记') {
+          display = false;
+        }
+      });
+      if (display) { %>
+        <%- partial('article', {post: post, index: true}) %>
+      <% } %>
+    <% } %>
   <% }); %>
 
   <center>
