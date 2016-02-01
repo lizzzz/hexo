@@ -1,21 +1,32 @@
 <%- partial('_partial/head') %>
 <body>
-	<div class="container">
+	<div class="container-fluid">
     	<%- partial('_partial/navigation') %>
     	<div class="row">
 			<div class="col-md-12">
-				<div class="col-sm-6 col-md-8">	
+                <div class="col-sm-0 col-md-1">
+                </div>
+				<div class="col-sm-6 col-md-6">	
     				<%- body %>
     			</div><!-- col-md-8 -->
                 <div class="col-sm-6 col-md-4"> 
     			    <%- partial('_partial/sidebar') %>
                 </div><!-- col-md-4 -->
+                <div class="col-sm-0 col-md-1">
+                </div>
     		</div><!-- col-md-12-->
     	</div><!-- row -->  	
-    </div>
-    <div class="container-narrow">
-    	<%- partial('_partial/footer') %>
-        <%- partial('_partial/after_footer') %>
+    
+        <div class="container-narrow">
+            <div class="col-sm-0 col-md-1">
+            </div>
+            <div class="col-sm-12 col-md-10"> 
+        	   <%- partial('_partial/footer') %>
+                <%- partial('_partial/after_footer') %>
+            </div><!-- col-md-8 -->
+            <div class="col-sm-0 col-md-1">
+            </div>
+        </div>
     </div>
 </body>
 </html>

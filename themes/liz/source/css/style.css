@@ -7,9 +7,24 @@
   margin: 0 auto;
 } 
 
+.container-fluid {
+    padding: 0;
+    *zoom: 1;
+}
+
+.container-fluid:before,
+.container-fluid:after {
+     display: table;
+     line-height: 0;
+     content: "";
+}
+
+.container-fluid:after {
+     clear: both;
+}
+
 .container-narrow {
-  max-width: 999px;
-  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /* =============================================================================
@@ -452,7 +467,7 @@ footer span #busuanzi_value_site_uv{
    sidebar and widget
    ========================================================================== */
 #sidebar {
-  margin: 30px;
+  margin: 30px 40px;
  
   /*
   position: fixed;
